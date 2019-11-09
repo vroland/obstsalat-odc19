@@ -173,11 +173,17 @@ def find_route(start, timeout):
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
+        try:
+            _, lonlat, timeout = self.path.split("/")
+        except:
+            print("invalid path:", self.path)
+            self.send_response(404)
+            return
+
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
         self.end_headers()
         print ("path:", self.path)
-        _, lonlat, timeout = self.path.split("/")
         timeout = int(timeout)
         lonlat = list(map(float, lonlat.split(";")))
         print ("using timeout:", timeout)
