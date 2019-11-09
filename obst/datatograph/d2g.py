@@ -5,9 +5,9 @@ import sys
 import json
 from collections import namedtuple
 
-Graph = namedtuple("Graph", ["nodes", "edges"])
+Graph = namedtuple("Graph", ["nodes", "edges", "distance_matrix"])
 Node  = namedtuple("Node", ["id", "location", "metadata"])
-Edge  = namedtuple("Edge", ["u", "v", "weight"])
+Edge  = namedtuple("Edge", ["u", "v"])
 
 
 path = "../../Dresden_EPSG_4326/Tourismus/Sehenswürdigkeiten.json"
@@ -26,6 +26,7 @@ for feature in raw:
 def dist(u, v):
     return u.location[0]**2 + u.location[1]**2
 
-edges = [Edge(u, v, dist(u,v)) for u in nodes for v in nodes]
-graph = Graph(nodes, edges)
+edges = [Edge(u, v) for u in nodes for v in nodes]
+distance_matrix = [[dist(u,v) for v in nodes] for u in nodes]
+graph = Graph(nodes, edges, distance_matrix)
 
