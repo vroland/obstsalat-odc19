@@ -50,7 +50,7 @@ def create_data_model(graph, start):
     print ("start node:", start_node, graph.nodes[start_node])
     data = {}
     data['graph'] = graph
-    data['base_costs'] = [[0 for u in graph.nodes] for v in graph.nodes]
+    data['base_costs'] = graph.distance_matrix
     data['time_matrix'] = graph.distance_matrix
     #data['time_windows'] = [(i, 2000) for i, _ in enumerate(graph.nodes)]
     data['num_vehicles'] = 1
@@ -75,36 +75,42 @@ def solution_to_json(data, manager, routing, assignment):
     print('Dropped nodes:', dropped_nodes, "(", len(dropped_nodes), ")")
     # Display routes
 
-    index = routing.Start(0) # vehicle 0
-    route_time = 0
-    route_output = []
-    previous_index = data['depot']
-    while not routing.IsEnd(index):
-        node_index = manager.IndexToNode(index)
-        #route_load += data['demands'][node_index]
-        route_output.append(node_index) #= ' {0} Load({1}) -> '.format(node_index, route_load)
-        route_time += data['time_matrix'][previous_index][node_index]
-        previous_index = node_index
-        index = assignment.Value(routing.NextVar(index))
 
+    previous_index = routing.Start(0) # vehicle 0
+    index = manager.IndexToNode(assignment.Value(routing.NextVar(previous_index)))
+    route_output = [previous_index]
+
+    while not routing.IsEnd(index):
+        route_output.append(manager.IndexToNode(index))
+        previous_index = index
+        index = assignment.Value(routing.NextVar(index))
+    route_output.append(manager.IndexToNode(index))
+
+    print (route_output, "nodes:", len(data['graph'].nodes))
+    print('Objective: {} miles'.format(assignment.ObjectiveValue()))
+
+
+    route_time = 0
     answer = {}
-    answer["round_time"] = route_time
     answer["nodes"] = { i : data['graph'].nodes[i] for i in route_output }
     answer["route"] = route_output
     answer["trips"] = {}
     round_trip_list = route_output + [data['depot']]
-    for i, n in enumerate(round_trip_list[:-1]):
+    for i, n in enumerate(round_trip_list[:-2]):
         m = round_trip_list[i + 1]
         answer["trips"][n] = {}
         trip = answer["trips"][n]
         trip["time"] = data['time_matrix'][n][m]
+        route_time += trip["time"]
         trip["waypoints"] = []
         geometry = section_geometry(
-                start=data['graph'].nodes[n].location,
-                end=data['graph'].nodes[m].location)
+            start=data['graph'].nodes[n].location,
+            end=data['graph'].nodes[m].location)
         trip["waypoints"].extend(geometry)
         # trip["waypoints"].append(data['graph'].nodes[n].location)
         # trip["waypoints"].append(data['graph'].nodes[m].location)
+
+    answer["round_time"] = route_time
     print("round_time:", route_time)
     print(route_output)
     return json.dumps(answer, indent=4)
@@ -161,6 +167,7 @@ def find_route(graph, start, timeout):
     #for v_idx in range(data.num_vehicles):
     #    duration_dimension.CumulVar(routing.End(v_idx)).SetMax(25)
 
+
     routing.AddDimension(
         time_callback_index,
         0,  # null capacity slack
@@ -169,20 +176,30 @@ def find_route(graph, start, timeout):
         'MaxDistance'
     )
 
+    #time_dimension = routing.GetDimensionOrDie('MaxDistance')
+
+    #routing.AddVariableMinimizedByFinalizer(time_dimension.CumulVar(routing.Start(0)))
+    #routing.AddVariableMinimizedByFinalizer(time_dimension.CumulVar(routing.End(0)))
+
     # Allow to drop nodes.
-    penalty = 10000
-    for node in range(0, len(data['time_matrix'])):
+    penalty = 100
+    for node in range(len(data['graph'].nodes)):
         if node != data['depot']:
             routing.AddDisjunction([manager.NodeToIndex(node)], penalty)
 
     # Setting first solution heuristic.
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()
+    #search_parameters.time_limit.seconds = 10
     search_parameters.first_solution_strategy = (
         routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC)
+    #search_parameters.local_search_metaheuristic = (
+    #    routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH)
+    #search_parameters.log_search = True
 
     # Solve the problem.
     assignment = routing.SolveWithParameters(search_parameters)
 
+    #print ("cumul len:", assignment.Max(time_dimension.CumulVar(routing.End(0))))
     return solution_to_json(data, manager, routing, assignment)
 
 
