@@ -22,15 +22,24 @@ import sys
 from http.server import *
 import json
 import math
+import os
 
 sys.path.append("../datatograph")
-from d2g import graph
+from d2g import load_graph
 
-# [END import]
+graphs = {}
 
+def load_graphs():
+    for root, dirs, files in os.walk("../../graphs/", topdown=False):
+        for name in files:
+            with open(os.path.join(root, name)) as f:
+                source = f.read()
+            graph = load_graph(source)
+            graphs[graph.name] = graph
+            print ("loaded", graph.name, "with", len(graph.nodes), "nodes!")
 
 # [START data_model]
-def create_data_model(start):
+def create_data_model(graph, start):
     """Stores the data for the problem."""
     def dist(u):
         u = graph.nodes[u]
@@ -93,10 +102,10 @@ def solution_to_json(data, manager, routing, assignment):
     return json.dumps(answer, indent=4)
 
 
-def find_route(start, timeout):
+def find_route(graph, start, timeout):
     """Solve the CVRP problem."""
     # Instantiate the data problem.
-    data = create_data_model(start)
+    data = create_data_model(graph, start)
 
     # Create the routing index manager.
     manager = pywrapcp.RoutingIndexManager(len(data['base_costs']),
@@ -173,17 +182,32 @@ def find_route(start, timeout):
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
+        try:
+            _, graph_name, lonlat, timeout = self.path.split("/")
+        except:
+            print("invalid path:", self.path)
+            self.send_response(404)
+            self.wfile.write("invalid path".encode("utf-8"))
+            return
+        if not graph_name in graphs:
+            self.send_response(404)
+            self.wfile.write("invalid graph".encode("utf-8"))
+            return
+
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
         print ("path:", self.path)
-        _, lonlat, timeout = self.path.split("/")
         timeout = int(timeout)
         lonlat = list(map(float, lonlat.split(";")))
+        graph = graphs[graph_name]
         print ("using timeout:", timeout)
-        self.wfile.write(find_route(lonlat, timeout).encode("utf-8"))
+        self.wfile.write(find_route(graph, lonlat, timeout).encode("utf-8"))
 
 if __name__ == '__main__':
+
+    load_graphs()
 
     def run(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler):
         server_address = ('', 8000)
