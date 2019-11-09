@@ -37,12 +37,14 @@ def dist_mtrx(nodes):
     dm = [list(map(lambda x: int(x/60), dur)) for dur in route["durations"]]
     return dm
 
-def get_route(route):
-    for coord_pair in zip(route, route[1:]):
+def get_route(tsp_route):
+    Route = namedtuple("Route", "sections geometry")
+    sections, geometry = [], []
+    for coord_pair in zip(tsp_route, tsp_route[1:]):
         section = directions(coord_pair)
-    # append sections to whole route
-
-    return
+        sections.append(section)
+        geometry.extend(section["geometry"])
+    return Route(sections, geometry)
 
 def dist(u, v):
     return int(100*math.sqrt((u.location[0] - v.location[0])**2 + (u.location[1] - v.location[1])**2)) + 1
