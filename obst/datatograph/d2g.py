@@ -10,6 +10,9 @@ from openrouteservice import Client
 from openrouteservice.distance_matrix import distance_matrix
 from openrouteservice.directions import directions
 
+# Api Client with custom base URL
+client = Client(base_url="http://localhost:8080/ors/")
+
 Graph = namedtuple("Graph", ["nodes", "distance_matrix", "name"])
 Node  = namedtuple("Node", ["id", "location", "metadata"])
 
@@ -27,9 +30,6 @@ def file_to_graph(path):
         ident = name + str(metadata["id"])
         node = Node(ident, location, metadata)
         nodes.append(node)
-
-    # Api Client with custom base URL
-    client = Client(base_url="http://localhost:8080/ors/")
 
     def dist_mtrx(nodes):
         nodes = [node.location for node in nodes]

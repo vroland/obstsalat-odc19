@@ -26,7 +26,7 @@ import os
 
 sys.path.append("../datatograph")
 from d2g import load_graph
-from d2g import client
+from d2g import client, directions
 
 graphs = {}
 
@@ -59,8 +59,8 @@ def create_data_model(graph, start):
     # [END data_model]
 
 def section_geometry(start, end):
-    section = client.directions((start, end))
-    return section["geometry"]["coordinates"]
+    section = directions(client, (start, end), profile="foot-walking", geometry=True, format="geojson")
+    return section["features"][0]["geometry"]["coordinates"]
 
 def solution_to_json(data, manager, routing, assignment):
     """Prints assignment on console."""
