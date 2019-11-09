@@ -1,0 +1,305 @@
+{
+    "round_time": 8,
+    "nodes": {
+        "0": [
+            "Sehensw\u00fcrdigkeiten2",
+            [
+                13.75847862088219,
+                51.06445211116486
+            ],
+            {
+                "gml_id": "1",
+                "autoid": 1,
+                "id": 2,
+                "einrichtung": "Alter J\u00fcdischer Friedhof",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Pulsnitzer Stra\u00dfe",
+                "hnr": "10",
+                "hnrz": null,
+                "plz": "01099",
+                "fon": "0351-8020489",
+                "fax": null,
+                "url": "www.dresden.de/de/tourismus/sehen/sehenswuerdigkeiten/neustadt/juedischer-friedhof.php;www.hatikva.de",
+                "rechtswert": 413005.118,
+                "hochwert": 5657725.448
+            }
+        ],
+        "3": [
+            "Sehensw\u00fcrdigkeiten6",
+            [
+                13.740768972001204,
+                51.05757845613449
+            ],
+            {
+                "gml_id": "4",
+                "autoid": 4,
+                "id": 6,
+                "einrichtung": "Blockhaus/ Neust\u00e4dter Wache",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Gro\u00dfe Mei\u00dfner Stra\u00dfe",
+                "hnr": "19",
+                "hnrz": null,
+                "plz": "01097",
+                "fon": "0351-81416776",
+                "fax": "0351-81416775",
+                "url": "www.dresden.de/de/tourismus/sehen/sehenswuerdigkeiten/neustadt/blockhaus-und-hauptstrasse.php;www.lanu.de",
+                "rechtswert": 411751.155,
+                "hochwert": 5656982.17
+            }
+        ],
+        "100": [
+            "Sehensw\u00fcrdigkeiten52",
+            [
+                13.738795959495562,
+                51.05251346714521
+            ],
+            {
+                "gml_id": "101",
+                "autoid": 101,
+                "id": 52,
+                "einrichtung": "Stallhof",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Augustusstra\u00dfe",
+                "hnr": null,
+                "hnrz": null,
+                "plz": "01067",
+                "fon": "0351-49149601",
+                "fax": "0351-4914625",
+                "url": "www.dresden.de/de/tourismus/sehen/sehenswuerdigkeiten/altstadt/stallhof-und-fuerstenzug.php;www.festung-dresden.de/de/dresdner_stallhof/",
+                "rechtswert": 411603.244,
+                "hochwert": 5656421.313
+            }
+        ],
+        "99": [
+            "Sehensw\u00fcrdigkeiten8",
+            [
+                13.744557117436369,
+                51.05306995308506
+            ],
+            {
+                "gml_id": "100",
+                "autoid": 100,
+                "id": 8,
+                "einrichtung": "Br\u00fchlsche Terasse und Br\u00fchlscher Garten",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Br\u00fchlsche Terasse",
+                "hnr": null,
+                "hnrz": null,
+                "plz": "01067",
+                "fon": "0351-49149601",
+                "fax": "0351-49149625",
+                "url": "www.dresden.de/de/tourismus/sehen/sehenswuerdigkeiten/altstadt/bruehlsche-terrasse-und-festung-dresden.php;www.dresdner-verein-bruehlsche-terrasse.de;www.festung-dresden.de/de/bruehlsche_terrasse/",
+                "rechtswert": 412008.08,
+                "hochwert": 5656476.296
+            }
+        ],
+        "98": [
+            "Sehensw\u00fcrdigkeiten9",
+            [
+                13.734763760963645,
+                51.05184066037677
+            ],
+            {
+                "gml_id": "99",
+                "autoid": 99,
+                "id": 9,
+                "einrichtung": "Cholerabrunnen",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Sophienstra\u00dfe",
+                "hnr": null,
+                "hnrz": null,
+                "plz": "01067",
+                "fon": null,
+                "fax": null,
+                "url": null,
+                "rechtswert": 411319.355,
+                "hochwert": 5656351.344
+            }
+        ],
+        "96": [
+            "Sehensw\u00fcrdigkeiten20",
+            [
+                13.741354362791396,
+                51.05809643792558
+            ],
+            {
+                "gml_id": "97",
+                "autoid": 97,
+                "id": 20,
+                "einrichtung": "Goldener Reiter",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Hauptstra\u00dfe",
+                "hnr": null,
+                "hnrz": null,
+                "plz": "01097",
+                "fon": null,
+                "fax": null,
+                "url": "www.dresden.de/de/tourismus/sehen/sehenswuerdigkeiten/neustadt/goldener-reiter.php",
+                "rechtswert": 411793.163,
+                "hochwert": 5657039.068
+            }
+        ],
+        "93": [
+            "Sehensw\u00fcrdigkeiten45",
+            [
+                13.733404377969508,
+                51.05640890248174
+            ],
+            {
+                "gml_id": "94",
+                "autoid": 94,
+                "id": 45,
+                "einrichtung": "S\u00e4chsischer Landtag",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "Bernhard-von-Lindenau-Platz",
+                "hnr": "1",
+                "hnrz": null,
+                "plz": "01067",
+                "fon": "0351-49350",
+                "fax": "0351-4935900",
+                "url": "www.landtag.sachsen.de",
+                "rechtswert": 411232.814,
+                "hochwert": 5656860.966
+            }
+        ],
+        "76": [
+            "Sehensw\u00fcrdigkeiten55",
+            [
+                13.750789643976274,
+                51.0660786442811
+            ],
+            {
+                "gml_id": "77",
+                "autoid": 77,
+                "id": 55,
+                "einrichtung": "Szeneviertel \u00c4u\u00dfere Neustadt",
+                "einrichtungsart": "Sehensw\u00fcrdigkeit",
+                "strasse": "zwischen Louisen- und Alaunstra\u00dfe",
+                "hnr": null,
+                "hnrz": null,
+                "plz": "01099",
+                "fon": null,
+                "fax": null,
+                "url": "www.dresden.de/de/tourismus/sehen/sehenswuerdigkeiten/neustadt/szeneviertel-aeussere-neustadt.php;www.dresden-neustadt.de",
+                "rechtswert": 412469.428,
+                "hochwert": 5657915.428
+            }
+        ]
+    },
+    "route": [
+        0,
+        3,
+        100,
+        99,
+        98,
+        96,
+        93,
+        76
+    ],
+    "trips": {
+        "0": {
+            "time": 2,
+            "waypoints": [
+                [
+                    13.75847862088219,
+                    51.06445211116486
+                ],
+                [
+                    13.740768972001204,
+                    51.05757845613449
+                ]
+            ]
+        },
+        "3": {
+            "time": 1,
+            "waypoints": [
+                [
+                    13.740768972001204,
+                    51.05757845613449
+                ],
+                [
+                    13.738795959495562,
+                    51.05251346714521
+                ]
+            ]
+        },
+        "100": {
+            "time": 1,
+            "waypoints": [
+                [
+                    13.738795959495562,
+                    51.05251346714521
+                ],
+                [
+                    13.744557117436369,
+                    51.05306995308506
+                ]
+            ]
+        },
+        "99": {
+            "time": 1,
+            "waypoints": [
+                [
+                    13.744557117436369,
+                    51.05306995308506
+                ],
+                [
+                    13.734763760963645,
+                    51.05184066037677
+                ]
+            ]
+        },
+        "98": {
+            "time": 1,
+            "waypoints": [
+                [
+                    13.734763760963645,
+                    51.05184066037677
+                ],
+                [
+                    13.741354362791396,
+                    51.05809643792558
+                ]
+            ]
+        },
+        "96": {
+            "time": 1,
+            "waypoints": [
+                [
+                    13.741354362791396,
+                    51.05809643792558
+                ],
+                [
+                    13.733404377969508,
+                    51.05640890248174
+                ]
+            ]
+        },
+        "93": {
+            "time": 2,
+            "waypoints": [
+                [
+                    13.733404377969508,
+                    51.05640890248174
+                ],
+                [
+                    13.750789643976274,
+                    51.0660786442811
+                ]
+            ]
+        },
+        "76": {
+            "time": 1,
+            "waypoints": [
+                [
+                    13.750789643976274,
+                    51.0660786442811
+                ],
+                [
+                    13.75847862088219,
+                    51.06445211116486
+                ]
+            ]
+        }
+    }
+}
