@@ -13,12 +13,15 @@
 # [START program]
 """Simple travelling salesman problem between cities."""
 
+# http://localhost:8000/13.737930691215155;51.049717431564794/10
+
 # [START import]
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 import sys
 from http.server import *
 import json
+import math
 
 sys.path.append("../datatograph")
 from d2g import graph
@@ -27,15 +30,21 @@ from d2g import graph
 
 
 # [START data_model]
-def create_data_model():
+def create_data_model(start):
     """Stores the data for the problem."""
+    def dist(u):
+        u = graph.nodes[u]
+        return math.sqrt((start[0]-u.location[0])**2 + (start[1]-u.location[1])**2)
+
+    start_node = sorted(list(range(len(graph.nodes))), key=lambda n: dist(n))[0]
+    print ("start node:", start_node, graph.nodes[start_node])
     data = {}
     data['graph'] = graph
     data['base_costs'] = [[0 for u in graph.nodes] for v in graph.nodes]
     data['time_matrix'] = graph.distance_matrix
     #data['time_windows'] = [(i, 2000) for i, _ in enumerate(graph.nodes)]
     data['num_vehicles'] = 1
-    data['depot'] = 0
+    data['depot'] = start_node
     return data
     # [END data_model]
 
@@ -56,7 +65,6 @@ def solution_to_json(data, manager, routing, assignment):
     index = routing.Start(0) # vehicle 0
     route_time = 0
     route_output = []
-    index = 0
     previous_index = data['depot']
     while not routing.IsEnd(index):
         node_index = manager.IndexToNode(index)
@@ -85,10 +93,10 @@ def solution_to_json(data, manager, routing, assignment):
     return json.dumps(answer, indent=4)
 
 
-def find_route(timeout):
+def find_route(start, timeout):
     """Solve the CVRP problem."""
     # Instantiate the data problem.
-    data = create_data_model()
+    data = create_data_model(start)
 
     # Create the routing index manager.
     manager = pywrapcp.RoutingIndexManager(len(data['base_costs']),
@@ -123,13 +131,15 @@ def find_route(timeout):
     #    from_node = manager.IndexToNode(from_index)
     # return data['time_matrix'][from_node]
 
+
+    ######## Maximum number of stations ####################
     #time_callback_index = routing.RegisterTransitCallback(time_callback)
-    routing.AddDimensionWithVehicleCapacity(
-        time_callback_index,
-        0,  # null capacity slack
-        [30],  # vehicle maximum capacities
-        True,  # start cumul to zero
-    'Capacity')
+    #routing.AddDimensionWithVehicleCapacity(
+    #    time_callback_index,
+    #    0,  # null capacity slack
+    #    [30],  # vehicle maximum capacities
+    #    True,  # start cumul to zero
+    #'Capacity')
 
     #for v_idx in range(data.num_vehicles):
     #    duration_dimension.CumulVar(routing.End(v_idx)).SetMax(25)
@@ -144,8 +154,9 @@ def find_route(timeout):
 
     # Allow to drop nodes.
     penalty = 10000
-    for node in range(1, len(data['time_matrix'])):
-        routing.AddDisjunction([manager.NodeToIndex(node)], penalty)
+    for node in range(0, len(data['time_matrix'])):
+        if node != data['depot']:
+            routing.AddDisjunction([manager.NodeToIndex(node)], penalty)
 
     # Setting first solution heuristic.
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()
@@ -165,7 +176,12 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
         self.end_headers()
-        self.wfile.write(find_route(50).encode("utf-8"))
+        print ("path:", self.path)
+        _, lonlat, timeout = self.path.split("/")
+        timeout = int(timeout)
+        lonlat = list(map(float, lonlat.split(";")))
+        print ("using timeout:", timeout)
+        self.wfile.write(find_route(lonlat, timeout).encode("utf-8"))
 
 if __name__ == '__main__':
 
