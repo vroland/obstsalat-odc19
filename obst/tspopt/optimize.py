@@ -26,6 +26,7 @@ import os
 
 sys.path.append("../datatograph")
 from d2g import load_graph
+from d2g import client
 
 graphs = {}
 
@@ -57,6 +58,9 @@ def create_data_model(graph, start):
     return data
     # [END data_model]
 
+def section_geometry(start, end):
+    section = client.directions((start, end))
+    return section["geometry"]["coordinates"]
 
 def solution_to_json(data, manager, routing, assignment):
     """Prints assignment on console."""
@@ -95,8 +99,12 @@ def solution_to_json(data, manager, routing, assignment):
         trip = answer["trips"][n]
         trip["time"] = data['time_matrix'][n][m]
         trip["waypoints"] = []
-        trip["waypoints"].append(data['graph'].nodes[n].location)
-        trip["waypoints"].append(data['graph'].nodes[m].location)
+        geometry = section_geometry(
+                start=data['graph'].nodes[n].location,
+                end=data['graph'].nodes[m].location)
+        trip["waypoints"].extend(geometry)
+        # trip["waypoints"].append(data['graph'].nodes[n].location)
+        # trip["waypoints"].append(data['graph'].nodes[m].location)
     print("round_time:", route_time)
     print(route_output)
     return json.dumps(answer, indent=4)
