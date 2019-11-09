@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
 
@@ -150,8 +152,11 @@ body {
 
 <script type="text/javascript">
   
+var slider_var=50;
+
 function updateTextInput(val) {
           document.getElementById('textInput').value=val; 
+          slider_var= val;
         }
 
 
@@ -168,125 +173,10 @@ function updateTextInput(val) {
 
 
 
-  <p>Anzahl der Stationen:<input type="text" id="textInput" value="50"></p>
+  <p>Zeit:<input type="text" id="textInput" value="50"></p>
   <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
 
 
-<style type="text/css">
-    
-
-  .quantity {
-    position: relative;
-  }
-
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button
-  {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type=number]
-  {
-    -moz-appearance: textfield;
-  }
-
-  .quantity input {
-    width: 45px;
-    height: 42px;
-    line-height: 1.65;
-    float: left;
-    display: block;
-    padding: 0;
-    margin: 0;
-    padding-left: 20px;
-    border: 1px solid #eee;
-  }
-
-  .quantity input:focus {
-    outline: 0;
-  }
-
-  .quantity-nav {
-    float: left;
-    position: relative;
-    height: 42px;
-  }
-
-  .quantity-button {
-    position: relative;
-    cursor: pointer;
-    border-left: 1px solid #eee;
-    width: 20px;
-    text-align: center;
-    color: #333;
-    font-size: 13px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-    line-height: 1.7;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  }
-
-  .quantity-button.quantity-up {
-    position: absolute;
-    height: 50%;
-    top: 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  .quantity-button.quantity-down {
-    position: absolute;
-    bottom: -1px;
-    height: 50%;
-  }
-</style>
-
-<!-- <script type="text/javascript">
-  
-  jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
-  jQuery('.quantity').each(function() {
-  var spinner = jQuery(this),
-  input = spinner.find('input[type="number"]'),
-  btnUp = spinner.find('.quantity-up'),
-  btnDown = spinner.find('.quantity-down'),
-  min = input.attr('min'),
-  max = input.attr('max');
-
-  btnUp.click(function() {
-  var oldValue = parseFloat(input.val());
-  if (oldValue >= max) {
-  var newVal = oldValue;
-  } else {
-  var newVal = oldValue + 1;
-  }
-  spinner.find("input").val(newVal);
-  spinner.find("input").trigger("change");
-  });
-
-  btnDown.click(function() {
-  var oldValue = parseFloat(input.val());
-  if (oldValue <= min) {
-  var newVal = oldValue;
-  } else {
-  var newVal = oldValue - 1;
-  }
-  spinner.find("input").val(newVal);
-  spinner.find("input").trigger("change");
-  });
-
-  });
-</script> -->
-
-
-
-    <div class="quantity">
-  <input type="number" min="1" max="9" step="1" value="1">
-</div>
 
 
 
@@ -295,53 +185,67 @@ function updateTextInput(val) {
 
 <button onclick="myFunction()">Click me</button>
 
+<button onclick="deleteFunction()">Click me</button>
+
 
 </div>
 <div id="mapid" style="width: 80%; height: 500px;">
 </div>
 
+
+
+
+
+
+
+
+
 <script type="text/javascript">
+
+
+
 
   var x_average = 0;
   var y_average = 0;
-function displayData(routeinfo) {
-    console.log(routeinfo.route[i]);
-
-
-  var i;
+    var i;
   var points = [];
-
-
-
+  var markers = L.layerGroup();
+  
+function displayData(routeinfo) {
+    // console.log(routeinfo.route[i]);
 
   for (i = 0; i < routeinfo.route.length; i++) {
-    // text += routeinfo.route + "<br>";
-    // console.log(routeinfo.route[i]);
-    // console.log(routeinfo.nodes[routeinfo.route[i]][1][0]);
+
     L.marker([routeinfo.nodes[routeinfo.route[i]][1][1], routeinfo.nodes[routeinfo.route[i]][1][0]]).addTo(mymap)
       .bindPopup("<br/>"+JSON.stringify(routeinfo.nodes[routeinfo.route[i]][2].einrichtung)).openPopup();
 
+    // var marker=L.marker([routeinfo.nodes[routeinfo.route[i]][1][1], routeinfo.nodes[routeinfo.route[i]][1][0]]);
+
+    // markers.bindPopup("<br/>"+JSON.stringify(routeinfo.nodes[routeinfo.route[i]][2].einrichtung)).openPopup();
+
+    // markers.addLayer(marker);
+
+    // this.mymap.addLayer(markers);
+
     points[i]=new L.LatLng(routeinfo.nodes[routeinfo.route[i]][1][1], routeinfo.nodes[routeinfo.route[i]][1][0]);
+
 
     x_average = x_average + routeinfo.nodes[routeinfo.route[i]][1][1];
     y_average = y_average + routeinfo.nodes[routeinfo.route[i]][1][0];
 
   }
 
+L.markers.addTo(mymap);
+
 
   x_average = x_average/routeinfo.route.length;
   y_average = y_average/routeinfo.route.length;
 
 
+if(firstpolyline!=undefined){
+  mymap.removeLayer(firstpolyline);
+}
 
-//  var pointList = null
-
-// var j;
-// for (j=0; j<routeinfo.route.length; i++) {
-
-//   pointList.push(points[j]);
-
-//   }
 
 
   var firstpolyline = new L.Polyline(points, {
@@ -377,7 +281,27 @@ function displayData(routeinfo) {
   }
 
   mymap.on('click', onMapClick);
+
+
+
+    // if (markers != undefined) {
+    //           markers.clearLayers();
+    //     };
+
+    markers.clearLayers();
+
 }
+
+
+function deleteFunction(){
+
+  // mymap.off();
+// mymap.removeLayer();
+
+}
+
+
+
 
 function myFunction() {
 
@@ -388,13 +312,19 @@ function myFunction() {
       displayData(data);
     }
   };
-  xmlhttp.open("GET", "http://localhost:8000/sehenswuerdigkeiten/13.737930691215155;51.049717431564794/10", true);
+
+
+
+  xmlhttp.open("GET", "http://localhost:8000/sehenswuerdigkeiten/13.737930691215155;51.049717431564794/"+slider_var, true);
   xmlhttp.send();
 
+    // var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13);
 
 
 }
+  
   var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13);
+
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
