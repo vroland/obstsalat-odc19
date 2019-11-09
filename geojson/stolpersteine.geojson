@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3265456424",
+        "id": "node/3265456424",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Berthold_Wronkow_Stolperstein_Dresden.JPG",
@@ -26,12 +26,12 @@
           51.0612241
         ]
       },
-      "id": "node/3265456424"
+      "fid": "node/3265456424"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3278618561",
+        "id": "node/3278618561",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Elise_Berta_Wronkow_Stolperstein_Dresden.JPG",
@@ -50,12 +50,12 @@
           51.0612225
         ]
       },
-      "id": "node/3278618561"
+      "fid": "node/3278618561"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3278618562",
+        "id": "node/3278618562",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Hans_Wronkow_Stolperstein_Dresden.JPG",
@@ -74,12 +74,12 @@
           51.0612204
         ]
       },
-      "id": "node/3278618562"
+      "fid": "node/3278618562"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3278645898",
+        "id": "node/3278645898",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Michael_Blitzblau_Stolperstein_Dresden.JPG",
@@ -98,12 +98,12 @@
           51.0642214
         ]
       },
-      "id": "node/3278645898"
+      "fid": "node/3278645898"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3278645899",
+        "id": "node/3278645899",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Rifka_Blitzblau_Stolperstein_Dresden.JPG",
@@ -123,12 +123,12 @@
           51.0642214
         ]
       },
-      "id": "node/3278645899"
+      "fid": "node/3278645899"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3278645900",
+        "id": "node/3278645900",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Siegfried_Blitzblau_Stolperstein_Dresden.JPG",
@@ -147,12 +147,12 @@
           51.064213
         ]
       },
-      "id": "node/3278645900"
+      "fid": "node/3278645900"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3278648380",
+        "id": "node/3278648380",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "http://commons.wikimedia.org/wiki/File:Elisabeth_Pick_Stolperstein_Dresden_2.JPG",
@@ -173,12 +173,12 @@
           51.036697
         ]
       },
-      "id": "node/3278648380"
+      "fid": "node/3278648380"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3298003199",
+        "id": "node/3298003199",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Dorothea Rothholz Stolperstein Dresden.JPG",
@@ -199,12 +199,12 @@
           51.0447621
         ]
       },
-      "id": "node/3298003199"
+      "fid": "node/3298003199"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3298003200",
+        "id": "node/3298003200",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Lina Marie Schöbel Stolperstein Dresden 2.JPG",
@@ -226,12 +226,12 @@
           51.0616009
         ]
       },
-      "id": "node/3298003200"
+      "fid": "node/3298003200"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301318580",
+        "id": "node/3301318580",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Elfriede_Maria_Scholz_Stolperstein_Dresden.JPG",
@@ -253,12 +253,12 @@
           51.0343784
         ]
       },
-      "id": "node/3301318580"
+      "fid": "node/3301318580"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301318581",
+        "id": "node/3301318581",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Erich_Schapira_Stolperstein_Dresden.JPG",
@@ -279,12 +279,12 @@
           51.0326871
         ]
       },
-      "id": "node/3301318581"
+      "fid": "node/3301318581"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301318582",
+        "id": "node/3301318582",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "Datei:Julie_Salinger_Stolperstein_Dresden.JPG",
@@ -306,12 +306,12 @@
           51.0342275
         ]
       },
-      "id": "node/3301318582"
+      "fid": "node/3301318582"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301318583",
+        "id": "node/3301318583",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Martha_Schmoll_Stolperstein_Dresden.JPG",
@@ -332,12 +332,12 @@
           51.0631284
         ]
       },
-      "id": "node/3301318583"
+      "fid": "node/3301318583"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301318584",
+        "id": "node/3301318584",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Stolperstein_dresden_rosa_conradi.JPG",
@@ -359,12 +359,12 @@
           51.0628102
         ]
       },
-      "id": "node/3301318584"
+      "fid": "node/3301318584"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301318585",
+        "id": "node/3301318585",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Toni_Schapira_Stolperstein_Dresden.JPG",
@@ -386,12 +386,12 @@
           51.0326803
         ]
       },
-      "id": "node/3301318585"
+      "fid": "node/3301318585"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953471",
+        "id": "node/3301953471",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Arthur_Anton_Zinn_Stolperstein_Dresden.JPG",
@@ -413,12 +413,12 @@
           51.0295118
         ]
       },
-      "id": "node/3301953471"
+      "fid": "node/3301953471"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953472",
+        "id": "node/3301953472",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Bertha_Steinhart_Stolperstein_Dresden.JPG",
@@ -440,12 +440,12 @@
           51.0324888
         ]
       },
-      "id": "node/3301953472"
+      "fid": "node/3301953472"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953473",
+        "id": "node/3301953473",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Else_Auguste_Seifert_Stolperstein_Dresden.JPG",
@@ -467,12 +467,12 @@
           51.0372104
         ]
       },
-      "id": "node/3301953473"
+      "fid": "node/3301953473"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953474",
+        "id": "node/3301953474",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Ernst_Kreidl_Stolperstein_Dresden.JPG",
@@ -494,12 +494,12 @@
           51.0249848
         ]
       },
-      "id": "node/3301953474"
+      "fid": "node/3301953474"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953475",
+        "id": "node/3301953475",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Gert_Steinhart_Stolperstein_Dresden.JPG",
@@ -521,12 +521,12 @@
           51.0325013
         ]
       },
-      "id": "node/3301953475"
+      "fid": "node/3301953475"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953476",
+        "id": "node/3301953476",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Kurt_Steinhart_Stolperstein_Dresden.JPG",
@@ -548,12 +548,12 @@
           51.0324972
         ]
       },
-      "id": "node/3301953476"
+      "fid": "node/3301953476"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953477",
+        "id": "node/3301953477",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Marion_Steinhart_Stolperstein_Dresden.JPG",
@@ -575,12 +575,12 @@
           51.0325041
         ]
       },
-      "id": "node/3301953477"
+      "fid": "node/3301953477"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953478",
+        "id": "node/3301953478",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Richard_Steinhart_Stolperstein_Dresden.JPG",
@@ -602,12 +602,12 @@
           51.0324907
         ]
       },
-      "id": "node/3301953478"
+      "fid": "node/3301953478"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301953479",
+        "id": "node/3301953479",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Richard_Steinhart_Stolperstein_Dresden.JPG",
@@ -628,12 +628,12 @@
           51.0324944
         ]
       },
-      "id": "node/3301953479"
+      "fid": "node/3301953479"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301959215",
+        "id": "node/3301959215",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Ernst_Schindler_Stolperstein_Dresden.JPG",
@@ -655,12 +655,12 @@
           51.0475167
         ]
       },
-      "id": "node/3301959215"
+      "fid": "node/3301959215"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301959216",
+        "id": "node/3301959216",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Josef_Altbach_Stolperstein_Dresden.JPG",
@@ -681,12 +681,12 @@
           51.0515771
         ]
       },
-      "id": "node/3301959216"
+      "fid": "node/3301959216"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301959217",
+        "id": "node/3301959217",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Sarah_Altbach_Stolperstein_Dresden.JPG",
@@ -707,12 +707,12 @@
           51.0515751
         ]
       },
-      "id": "node/3301959217"
+      "fid": "node/3301959217"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301959218",
+        "id": "node/3301959218",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Thekla_Schindler_Stolperstein_Dresden.JPG",
@@ -734,12 +734,12 @@
           51.0475085
         ]
       },
-      "id": "node/3301959218"
+      "fid": "node/3301959218"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301972347",
+        "id": "node/3301972347",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Bedrich_Fantl_Stolperstein_Dresden.JPG",
@@ -761,12 +761,12 @@
           51.0467456
         ]
       },
-      "id": "node/3301972347"
+      "fid": "node/3301972347"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301972348",
+        "id": "node/3301972348",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Brigitte_Fantl_Stolperstein_Dresden.JPG",
@@ -788,12 +788,12 @@
           51.0467427
         ]
       },
-      "id": "node/3301972348"
+      "fid": "node/3301972348"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301972349",
+        "id": "node/3301972349",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Leo_Fantl_Stolperstein_Dresden.JPG",
@@ -815,12 +815,12 @@
           51.0467479
         ]
       },
-      "id": "node/3301972349"
+      "fid": "node/3301972349"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301972350",
+        "id": "node/3301972350",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Helene_Fantl_Stolperstein_Dresden.JPG",
@@ -842,12 +842,12 @@
           51.0467396
         ]
       },
-      "id": "node/3301972350"
+      "fid": "node/3301972350"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301978859",
+        "id": "node/3301978859",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Fritz_Meyer_Stolperstein_Dresden.JPG",
@@ -869,12 +869,12 @@
           51.0476111
         ]
       },
-      "id": "node/3301978859"
+      "fid": "node/3301978859"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301978860",
+        "id": "node/3301978860",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Harry_Herbert_Hirschel_Meyer_Stolperstein_Dresden.JPG",
@@ -896,12 +896,12 @@
           51.0476252
         ]
       },
-      "id": "node/3301978860"
+      "fid": "node/3301978860"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301979661",
+        "id": "node/3301979661",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Heinz_Meyer_Stolperstein_Dresden.JPG",
@@ -922,12 +922,12 @@
           51.0476163
         ]
       },
-      "id": "node/3301979661"
+      "fid": "node/3301979661"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3301979662",
+        "id": "node/3301979662",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Johanne_Meyer_Stolperstein_Dresden.JPG",
@@ -949,12 +949,12 @@
           51.047621
         ]
       },
-      "id": "node/3301979662"
+      "fid": "node/3301979662"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302720504",
+        "id": "node/3302720504",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "Datei:Irma_Wolff_Stolperstein_Dresden.JPG",
@@ -975,12 +975,12 @@
           51.0199712
         ]
       },
-      "id": "node/3302720504"
+      "fid": "node/3302720504"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302720505",
+        "id": "node/3302720505",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Johanna_Hepner_Stolperstein_Dresden.JPG",
@@ -1001,12 +1001,12 @@
           51.0568517
         ]
       },
-      "id": "node/3302720505"
+      "fid": "node/3302720505"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302720506",
+        "id": "node/3302720506",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Peter_Hepner_Stolperstein_Dresden.JPG",
@@ -1027,12 +1027,12 @@
           51.056848
         ]
       },
-      "id": "node/3302720506"
+      "fid": "node/3302720506"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302720507",
+        "id": "node/3302720507",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Richard_Hepner_Stolperstein_Dresden.JPG",
@@ -1053,12 +1053,12 @@
           51.0568557
         ]
       },
-      "id": "node/3302720507"
+      "fid": "node/3302720507"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302720508",
+        "id": "node/3302720508",
         "historic": "memorial",
         "image": "File:Zalko_Bialaschewsky_Stolperstein_Dresden.JPG",
         "memorial:addr": "Robert-Blum-Straße 1 Ecke Kleine Marienbrücke, Dresden",
@@ -1080,12 +1080,12 @@
           51.0616263
         ]
       },
-      "id": "node/3302720508"
+      "fid": "node/3302720508"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302736395",
+        "id": "node/3302736395",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Aron_Höxter_Stolperstein_Dresden.JPG",
@@ -1107,12 +1107,12 @@
           51.0459441
         ]
       },
-      "id": "node/3302736395"
+      "fid": "node/3302736395"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302736396",
+        "id": "node/3302736396",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Günter_Höxter_Stolperstein_Dresden.JPG",
@@ -1134,12 +1134,12 @@
           51.0459438
         ]
       },
-      "id": "node/3302736396"
+      "fid": "node/3302736396"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302736397",
+        "id": "node/3302736397",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Paula_Höxter_Stolperstein_Dresden.JPG",
@@ -1161,12 +1161,12 @@
           51.0459435
         ]
       },
-      "id": "node/3302736397"
+      "fid": "node/3302736397"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302770180",
+        "id": "node/3302770180",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Heinz_Martin_Wendisch_Stolperstein_Dresden.JPG",
@@ -1188,12 +1188,12 @@
           51.0884888
         ]
       },
-      "id": "node/3302770180"
+      "fid": "node/3302770180"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302881203",
+        "id": "node/3302881203",
         "description": "11. Sep. 2014 (Neuverlegung wegen Vandalismus)",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
@@ -1216,12 +1216,12 @@
           51.0300458
         ]
       },
-      "id": "node/3302881203"
+      "fid": "node/3302881203"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302881204",
+        "id": "node/3302881204",
         "description": "11. Sep. 2014 (Neuverlegung wegen Falschschreibung)",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
@@ -1243,12 +1243,12 @@
           51.0301131
         ]
       },
-      "id": "node/3302881204"
+      "fid": "node/3302881204"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302881205",
+        "id": "node/3302881205",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Gertrud_Helene_Chitz_Stolperstein_Dresden.JPG",
@@ -1269,12 +1269,12 @@
           51.030158
         ]
       },
-      "id": "node/3302881205"
+      "fid": "node/3302881205"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3302881206",
+        "id": "node/3302881206",
         "description": "11. Sep. 2014 (Neuverlegung wegen Vandalismus)",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
@@ -1296,12 +1296,12 @@
           51.030072
         ]
       },
-      "id": "node/3302881206"
+      "fid": "node/3302881206"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303167002",
+        "id": "node/3303167002",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Emil_Hochberg_Stolperstein_Dresden.JPG",
@@ -1323,12 +1323,12 @@
           51.0115733
         ]
       },
-      "id": "node/3303167002"
+      "fid": "node/3303167002"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303167003",
+        "id": "node/3303167003",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Selma_Nussbaum_Stolperstein_Dresden.JPG",
@@ -1350,12 +1350,12 @@
           51.0427737
         ]
       },
-      "id": "node/3303167003"
+      "fid": "node/3303167003"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303181918",
+        "id": "node/3303181918",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Edith_Urbach_Stolperstein_Dresden.JPG",
@@ -1376,12 +1376,12 @@
           51.0688637
         ]
       },
-      "id": "node/3303181918"
+      "fid": "node/3303181918"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303181919",
+        "id": "node/3303181919",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Fanny_Urbach_Stolperstein_Dresden.JPG",
@@ -1402,12 +1402,12 @@
           51.0688631
         ]
       },
-      "id": "node/3303181919"
+      "fid": "node/3303181919"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303181920",
+        "id": "node/3303181920",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Jacob_Urbach_Stolperstein_Dresden.JPG",
@@ -1428,12 +1428,12 @@
           51.0688635
         ]
       },
-      "id": "node/3303181920"
+      "fid": "node/3303181920"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303181921",
+        "id": "node/3303181921",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Martha_Urbach_Stolperstein_Dresden.JPG",
@@ -1454,12 +1454,12 @@
           51.0688645
         ]
       },
-      "id": "node/3303181921"
+      "fid": "node/3303181921"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303181922",
+        "id": "node/3303181922",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Siegfried_Urbach_Stolperstein_Dresden.JPG",
@@ -1480,12 +1480,12 @@
           51.0688627
         ]
       },
-      "id": "node/3303181922"
+      "fid": "node/3303181922"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303221817",
+        "id": "node/3303221817",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Marianne_Schönfelder_Stolperstein_Dresden.JPG",
@@ -1507,12 +1507,12 @@
           51.0574672
         ]
       },
-      "id": "node/3303221817"
+      "fid": "node/3303221817"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303221818",
+        "id": "node/3303221818",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Marie_Roy_Stolperstein_Dresden.JPG",
@@ -1534,12 +1534,12 @@
           51.0239034
         ]
       },
-      "id": "node/3303221818"
+      "fid": "node/3303221818"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303221819",
+        "id": "node/3303221819",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Nathan_Arthur_Levi_Stolperstein_Dresden.JPG",
@@ -1561,12 +1561,12 @@
           51.0715611
         ]
       },
-      "id": "node/3303221819"
+      "fid": "node/3303221819"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303221820",
+        "id": "node/3303221820",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Richard_Roy_Stolperstein_Dresden.JPG",
@@ -1587,12 +1587,12 @@
           51.0239001
         ]
       },
-      "id": "node/3303221820"
+      "fid": "node/3303221820"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303996688",
+        "id": "node/3303996688",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Bertha Steinhart 2 Stolperstein Dresden.JPG",
@@ -1615,12 +1615,12 @@
           51.0423803
         ]
       },
-      "id": "node/3303996688"
+      "fid": "node/3303996688"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303996689",
+        "id": "node/3303996689",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Edith Steinhart Stolperstein Dresden.JPG",
@@ -1643,12 +1643,12 @@
           51.0423828
         ]
       },
-      "id": "node/3303996689"
+      "fid": "node/3303996689"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303996690",
+        "id": "node/3303996690",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Gerald Steinhart Stolperstein Dresden.JPG",
@@ -1671,12 +1671,12 @@
           51.042381
         ]
       },
-      "id": "node/3303996690"
+      "fid": "node/3303996690"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303996691",
+        "id": "node/3303996691",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Irwin Steinhart Stolperstein Dresden.JPG",
@@ -1699,12 +1699,12 @@
           51.0423821
         ]
       },
-      "id": "node/3303996691"
+      "fid": "node/3303996691"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303996692",
+        "id": "node/3303996692",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Joseph Fränkel Stolperstein Dresden.JPG",
@@ -1726,12 +1726,12 @@
           51.0248487
         ]
       },
-      "id": "node/3303996692"
+      "fid": "node/3303996692"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3303996693",
+        "id": "node/3303996693",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Max_Steinhart_Stolperstein_Dresden.JPG",
@@ -1754,12 +1754,12 @@
           51.0423813
         ]
       },
-      "id": "node/3303996693"
+      "fid": "node/3303996693"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304014202",
+        "id": "node/3304014202",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Hertha Ruth Rabinowitsch Stolperstein Dresden.JPG",
@@ -1780,12 +1780,12 @@
           51.0324477
         ]
       },
-      "id": "node/3304014202"
+      "fid": "node/3304014202"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304014203",
+        "id": "node/3304014203",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Josef Rabinowitsch Stolperstein Dresden.JPG",
@@ -1807,12 +1807,12 @@
           51.0324472
         ]
       },
-      "id": "node/3304014203"
+      "fid": "node/3304014203"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304014204",
+        "id": "node/3304014204",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Martin Herbert Rabinowitsch Stolperstein Dresden.JPG",
@@ -1834,12 +1834,12 @@
           51.0324482
         ]
       },
-      "id": "node/3304014204"
+      "fid": "node/3304014204"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304014205",
+        "id": "node/3304014205",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Selma_Rabinowitsch_Stolperstein_Dresden.JPG",
@@ -1861,12 +1861,12 @@
           51.0324468
         ]
       },
-      "id": "node/3304014205"
+      "fid": "node/3304014205"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304014206",
+        "id": "node/3304014206",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Stefan Rabinowitsch Stolperstein Dresden.JPG",
@@ -1887,12 +1887,12 @@
           51.0324487
         ]
       },
-      "id": "node/3304014206"
+      "fid": "node/3304014206"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304030914",
+        "id": "node/3304030914",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "https://de.wikipedia.org/wiki/Datei:Heinrich_Kleiner_Stolperstein_Dresden.JPG",
@@ -1914,12 +1914,12 @@
           51.0675661
         ]
       },
-      "id": "node/3304030914"
+      "fid": "node/3304030914"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304030915",
+        "id": "node/3304030915",
         "historic": "memorial",
         "image": "File:Hildegard Rau Stolperstein Dresden.JPG",
         "memorial:addr": "Lortzingstraße 1, Dresden",
@@ -1940,12 +1940,12 @@
           51.04984
         ]
       },
-      "id": "node/3304030915"
+      "fid": "node/3304030915"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304030916",
+        "id": "node/3304030916",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "https://de.wikipedia.org/wiki/Datei:Justine_Kleiner_Stolperstein_Dresden.JPG",
@@ -1968,12 +1968,12 @@
           51.0675434
         ]
       },
-      "id": "node/3304030916"
+      "fid": "node/3304030916"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304030917",
+        "id": "node/3304030917",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "https://de.wikipedia.org/wiki/Datei:Marie_Kleiner_Stolperstein_Dresden.JPG",
@@ -1995,12 +1995,12 @@
           51.0675781
         ]
       },
-      "id": "node/3304030917"
+      "fid": "node/3304030917"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304030918",
+        "id": "node/3304030918",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "https://de.wikipedia.org/wiki/Datei:Moses_Kleiner_Stolperstein_Dresden.JPG",
@@ -2022,12 +2022,12 @@
           51.067554
         ]
       },
-      "id": "node/3304030918"
+      "fid": "node/3304030918"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304056795",
+        "id": "node/3304056795",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Claire Ehrmann Stolperstein Dresden.JPG",
@@ -2048,12 +2048,12 @@
           51.0657738
         ]
       },
-      "id": "node/3304056795"
+      "fid": "node/3304056795"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304056796",
+        "id": "node/3304056796",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Max Sachs Stolperstein Dresden.JPG",
@@ -2075,12 +2075,12 @@
           51.0657702
         ]
       },
-      "id": "node/3304056796"
+      "fid": "node/3304056796"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304056797",
+        "id": "node/3304056797",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Edith Kaufmann Stolperstein Dresden.JPG",
@@ -2101,12 +2101,12 @@
           51.0657757
         ]
       },
-      "id": "node/3304056797"
+      "fid": "node/3304056797"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304056798",
+        "id": "node/3304056798",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Maria Sachs Stolperstein Dresden.JPG",
@@ -2128,12 +2128,12 @@
           51.0657679
         ]
       },
-      "id": "node/3304056798"
+      "fid": "node/3304056798"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304128069",
+        "id": "node/3304128069",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Ida Fränkel Stolperstein Dresden.JPG",
@@ -2155,12 +2155,12 @@
           51.0614328
         ]
       },
-      "id": "node/3304128069"
+      "fid": "node/3304128069"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304128070",
+        "id": "node/3304128070",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Joseph Fränkel Stolperstein 2014 Dresden.JPG",
@@ -2182,12 +2182,12 @@
           51.061427
         ]
       },
-      "id": "node/3304128070"
+      "fid": "node/3304128070"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304140369",
+        "id": "node/3304140369",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Denny Liebermann Stolperstein Dresden.JPG",
@@ -2208,12 +2208,12 @@
           51.0408139
         ]
       },
-      "id": "node/3304140369"
+      "fid": "node/3304140369"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304140370",
+        "id": "node/3304140370",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Gabriele Ruth Liebermann Stolperstein Dresden.JPG",
@@ -2234,12 +2234,12 @@
           51.0408135
         ]
       },
-      "id": "node/3304140370"
+      "fid": "node/3304140370"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304140371",
+        "id": "node/3304140371",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Klaus Peter Liebermann Stolperstein Dresden.JPG",
@@ -2260,12 +2260,12 @@
           51.0408133
         ]
       },
-      "id": "node/3304140371"
+      "fid": "node/3304140371"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304140372",
+        "id": "node/3304140372",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Thea Liebermann Stolperstein Dresden.JPG",
@@ -2286,12 +2286,12 @@
           51.0408131
         ]
       },
-      "id": "node/3304140372"
+      "fid": "node/3304140372"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304140373",
+        "id": "node/3304140373",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Wolfgang Dietrich Liebermann Stolperstein Dresden.JPG",
@@ -2312,12 +2312,12 @@
           51.0408137
         ]
       },
-      "id": "node/3304140373"
+      "fid": "node/3304140373"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304197774",
+        "id": "node/3304197774",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Elsa Margareta Saul Stolperstein Dresden.JPG",
@@ -2338,12 +2338,12 @@
           51.0472653
         ]
       },
-      "id": "node/3304197774"
+      "fid": "node/3304197774"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304197775",
+        "id": "node/3304197775",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Sally Saul Stolperstein Dresden 2.JPG",
@@ -2364,12 +2364,12 @@
           51.0472917
         ]
       },
-      "id": "node/3304197775"
+      "fid": "node/3304197775"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304216180",
+        "id": "node/3304216180",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Alfred Steinhart Stolperstein Dresden.JPG",
@@ -2390,12 +2390,12 @@
           51.0611234
         ]
       },
-      "id": "node/3304216180"
+      "fid": "node/3304216180"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304216181",
+        "id": "node/3304216181",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Herta Steinhart Stolperstein Dresden.JPG",
@@ -2416,12 +2416,12 @@
           51.0611102
         ]
       },
-      "id": "node/3304216181"
+      "fid": "node/3304216181"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304237274",
+        "id": "node/3304237274",
         "historic": "memorial",
         "image": "File:Bela Kohn Stolperstein Dresden.JPG",
         "memorial:addr": "Pestalozzistraße 1, Dresden",
@@ -2441,12 +2441,12 @@
           51.0501239
         ]
       },
-      "id": "node/3304237274"
+      "fid": "node/3304237274"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304237275",
+        "id": "node/3304237275",
         "historic": "memorial",
         "image": "File:Edith Kohn Stolperstein Dresden.JPG",
         "memorial:addr": "Pestalozzistraße 1, Dresden",
@@ -2466,12 +2466,12 @@
           51.0501222
         ]
       },
-      "id": "node/3304237275"
+      "fid": "node/3304237275"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304237276",
+        "id": "node/3304237276",
         "historic": "memorial",
         "image": "File:Fanny Kohn Stolperstein Dresden.JPG",
         "memorial:addr": "Pestalozzistraße 1, Dresden",
@@ -2491,12 +2491,12 @@
           51.0501251
         ]
       },
-      "id": "node/3304237276"
+      "fid": "node/3304237276"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304237277",
+        "id": "node/3304237277",
         "historic": "memorial",
         "image": "File:Leizer Kohn Stolperstein Dresden.JPG",
         "memorial:addr": "Pestalozzistraße 1, Dresden",
@@ -2516,12 +2516,12 @@
           51.0501208
         ]
       },
-      "id": "node/3304237277"
+      "fid": "node/3304237277"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304237278",
+        "id": "node/3304237278",
         "historic": "memorial",
         "image": "File:Regina Kohn Stolperstein Dresden.JPG",
         "memorial:addr": "Pestalozzistraße 1, Dresden",
@@ -2541,12 +2541,12 @@
           51.0501188
         ]
       },
-      "id": "node/3304237278"
+      "fid": "node/3304237278"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304253044",
+        "id": "node/3304253044",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Chaim Levin Stolperstein Dresden.JPG",
@@ -2568,12 +2568,12 @@
           51.0287886
         ]
       },
-      "id": "node/3304253044"
+      "fid": "node/3304253044"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3304263561",
+        "id": "node/3304263561",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Herbert Samuel Stolperstein Dresden.JPG",
@@ -2594,12 +2594,12 @@
           51.0275324
         ]
       },
-      "id": "node/3304263561"
+      "fid": "node/3304263561"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305693634",
+        "id": "node/3305693634",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Gertrud_Silbermann_Stolperstein_Dresden.JPG",
@@ -2621,12 +2621,12 @@
           51.0393773
         ]
       },
-      "id": "node/3305693634"
+      "fid": "node/3305693634"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305693635",
+        "id": "node/3305693635",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Simon_Silbermann_Stolperstein_Dresden.JPG",
@@ -2648,12 +2648,12 @@
           51.0393602
         ]
       },
-      "id": "node/3305693635"
+      "fid": "node/3305693635"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305759591",
+        "id": "node/3305759591",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Anna_Zwecher_Stolperstein_Dresden.JPG",
@@ -2674,12 +2674,12 @@
           51.0530794
         ]
       },
-      "id": "node/3305759591"
+      "fid": "node/3305759591"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305759592",
+        "id": "node/3305759592",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Bernhard_Zwecher_Stolperstein_Dresden.JPG",
@@ -2700,12 +2700,12 @@
           51.0530824
         ]
       },
-      "id": "node/3305759592"
+      "fid": "node/3305759592"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305759593",
+        "id": "node/3305759593",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Helene_Herzberg_Stolperstein_Dresden.JPG",
@@ -2727,12 +2727,12 @@
           51.0530447
         ]
       },
-      "id": "node/3305759593"
+      "fid": "node/3305759593"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305759594",
+        "id": "node/3305759594",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Josef_Herzberg_Stolperstein_Dresden.JPG",
@@ -2753,12 +2753,12 @@
           51.0530462
         ]
       },
-      "id": "node/3305759594"
+      "fid": "node/3305759594"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305759595",
+        "id": "node/3305759595",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Szymon_Zwecher_Stolperstein_Dresden.JPG",
@@ -2779,12 +2779,12 @@
           51.0530839
         ]
       },
-      "id": "node/3305759595"
+      "fid": "node/3305759595"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305801561",
+        "id": "node/3305801561",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Irma_Sonnenschein_Stolperstein_Dresden.JPG",
@@ -2806,12 +2806,12 @@
           51.0305659
         ]
       },
-      "id": "node/3305801561"
+      "fid": "node/3305801561"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305801562",
+        "id": "node/3305801562",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Mirjam_Sonnenschein_Stolperstein_Dresden.JPG",
@@ -2833,12 +2833,12 @@
           51.0305595
         ]
       },
-      "id": "node/3305801562"
+      "fid": "node/3305801562"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305801563",
+        "id": "node/3305801563",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Sonja_Sonnenschein_Stolperstein_Dresden.JPG",
@@ -2860,12 +2860,12 @@
           51.0305534
         ]
       },
-      "id": "node/3305801563"
+      "fid": "node/3305801563"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305851489",
+        "id": "node/3305851489",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Anna_Pick_Stolperstein_Dresden.JPG",
@@ -2887,12 +2887,12 @@
           51.0507045
         ]
       },
-      "id": "node/3305851489"
+      "fid": "node/3305851489"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305851490",
+        "id": "node/3305851490",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Barbara_Kühnert_Stolperstein_Dresden.JPG",
@@ -2914,12 +2914,12 @@
           51.093761
         ]
       },
-      "id": "node/3305851490"
+      "fid": "node/3305851490"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305851491",
+        "id": "node/3305851491",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Edith_Hildegard_K%C3%BChnert_Stolperstein_Dresden.JPG",
@@ -2941,12 +2941,12 @@
           51.0937528
         ]
       },
-      "id": "node/3305851491"
+      "fid": "node/3305851491"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305873109",
+        "id": "node/3305873109",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Ella_Deutsch_Stolperstein_Dresden.JPG",
@@ -2968,12 +2968,12 @@
           51.0460132
         ]
       },
-      "id": "node/3305873109"
+      "fid": "node/3305873109"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305873110",
+        "id": "node/3305873110",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Hirsch_Deutsch_Stolperstein_Dresden.JPG",
@@ -2995,12 +2995,12 @@
           51.0460149
         ]
       },
-      "id": "node/3305873110"
+      "fid": "node/3305873110"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305887099",
+        "id": "node/3305887099",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Elfriede_Lohse-W%C3%A4chtler_Stolperstein_Dresden.JPG",
@@ -3022,12 +3022,12 @@
           51.0453497
         ]
       },
-      "id": "node/3305887099"
+      "fid": "node/3305887099"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305887100",
+        "id": "node/3305887100",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Gertrud_Hille_Stolperstein_Dresden.JPG",
@@ -3049,12 +3049,12 @@
           51.0338526
         ]
       },
-      "id": "node/3305887100"
+      "fid": "node/3305887100"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305894369",
+        "id": "node/3305894369",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Rosa_Steinhart_Stolperstein_Dresden.JPG",
@@ -3076,12 +3076,12 @@
           51.0849085
         ]
       },
-      "id": "node/3305894369"
+      "fid": "node/3305894369"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305894370",
+        "id": "node/3305894370",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Walter_Steinhart_Stolperstein_Dresden.JPG",
@@ -3103,12 +3103,12 @@
           51.0849058
         ]
       },
-      "id": "node/3305894370"
+      "fid": "node/3305894370"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305930104",
+        "id": "node/3305930104",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Malwine_Hann_Stolperstein_Dresden.JPG",
@@ -3130,12 +3130,12 @@
           51.0479567
         ]
       },
-      "id": "node/3305930104"
+      "fid": "node/3305930104"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305930105",
+        "id": "node/3305930105",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Sigmund_Hann_Stolperstein_Dresden.JPG",
@@ -3157,12 +3157,12 @@
           51.0479492
         ]
       },
-      "id": "node/3305930105"
+      "fid": "node/3305930105"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305941050",
+        "id": "node/3305941050",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Leo_Silbermann_Stolperstein_Dresden.JPG",
@@ -3184,12 +3184,12 @@
           51.0370691
         ]
       },
-      "id": "node/3305941050"
+      "fid": "node/3305941050"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305941051",
+        "id": "node/3305941051",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Margot_Felicja_Silbermann_Stolperstein_Dresden.JPG",
@@ -3210,12 +3210,12 @@
           51.0370869
         ]
       },
-      "id": "node/3305941051"
+      "fid": "node/3305941051"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305941052",
+        "id": "node/3305941052",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Rosa_Silbermann_Stolperstein_Dresden.JPG",
@@ -3236,12 +3236,12 @@
           51.0370771
         ]
       },
-      "id": "node/3305941052"
+      "fid": "node/3305941052"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305957330",
+        "id": "node/3305957330",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Abraham_Jacob_Schneck_Stolperstein_Dresden.JPG",
@@ -3263,12 +3263,12 @@
           51.0479614
         ]
       },
-      "id": "node/3305957330"
+      "fid": "node/3305957330"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305957331",
+        "id": "node/3305957331",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Leon_Schneck_Stolperstein_Dresden.JPG",
@@ -3289,12 +3289,12 @@
           51.0479801
         ]
       },
-      "id": "node/3305957331"
+      "fid": "node/3305957331"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305957332",
+        "id": "node/3305957332",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Pessia_Schneck_Stolperstein_Dresden.JPG",
@@ -3316,12 +3316,12 @@
           51.0479692
         ]
       },
-      "id": "node/3305957332"
+      "fid": "node/3305957332"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305957333",
+        "id": "node/3305957333",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Rosa_Schneck_Stolperstein_Dresden.JPG",
@@ -3343,12 +3343,12 @@
           51.0479749
         ]
       },
-      "id": "node/3305957333"
+      "fid": "node/3305957333"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305996301",
+        "id": "node/3305996301",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Clara_Weiss_Stolperstein_Dresden.JPG",
@@ -3370,12 +3370,12 @@
           51.0385515
         ]
       },
-      "id": "node/3305996301"
+      "fid": "node/3305996301"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305996302",
+        "id": "node/3305996302",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Eva_Weiss_Stolperstein_Dresden.JPG",
@@ -3397,12 +3397,12 @@
           51.0385802
         ]
       },
-      "id": "node/3305996302"
+      "fid": "node/3305996302"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3305996303",
+        "id": "node/3305996303",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Ruth_Jahrreiß_Stolperstein_Dresden.JPG",
@@ -3424,12 +3424,12 @@
           51.0245859
         ]
       },
-      "id": "node/3305996303"
+      "fid": "node/3305996303"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306011397",
+        "id": "node/3306011397",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Rosa_Menzer_Stolperstein_Dresden.JPG",
@@ -3451,12 +3451,12 @@
           51.0457309
         ]
       },
-      "id": "node/3306011397"
+      "fid": "node/3306011397"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306013489",
+        "id": "node/3306013489",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Alois_Andritzki_Stolperstein.JPG",
@@ -3478,12 +3478,12 @@
           51.0537249
         ]
       },
-      "id": "node/3306013489"
+      "fid": "node/3306013489"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306013490",
+        "id": "node/3306013490",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Kurt_Mosberg_Stolperstein_Dresden.JPG",
@@ -3505,12 +3505,12 @@
           51.088337
         ]
       },
-      "id": "node/3306013490"
+      "fid": "node/3306013490"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306032228",
+        "id": "node/3306032228",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Albert_Hirsch_Stolperstein_Dresden.JPG",
@@ -3531,12 +3531,12 @@
           51.0535272
         ]
       },
-      "id": "node/3306032228"
+      "fid": "node/3306032228"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306032229",
+        "id": "node/3306032229",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Fanny_Hirsch_Stolperstein_Dresden.JPG",
@@ -3558,12 +3558,12 @@
           51.0534986
         ]
       },
-      "id": "node/3306032229"
+      "fid": "node/3306032229"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306032230",
+        "id": "node/3306032230",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Manfred_Hirsch_Stolperstein_Dresden.JPG",
@@ -3585,12 +3585,12 @@
           51.0535137
         ]
       },
-      "id": "node/3306032230"
+      "fid": "node/3306032230"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306047890",
+        "id": "node/3306047890",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Chane_Zwecher_Stolperstein_Dresden.JPG",
@@ -3611,12 +3611,12 @@
           51.0538077
         ]
       },
-      "id": "node/3306047890"
+      "fid": "node/3306047890"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306047891",
+        "id": "node/3306047891",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Chaskel_Kurt_Zwecher_Stolperstein_Dresden.JPG",
@@ -3637,12 +3637,12 @@
           51.0537944
         ]
       },
-      "id": "node/3306047891"
+      "fid": "node/3306047891"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306047892",
+        "id": "node/3306047892",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Malka_Lea_Zwecher_Stolperstein_Dresden.JPG",
@@ -3663,12 +3663,12 @@
           51.0537998
         ]
       },
-      "id": "node/3306047892"
+      "fid": "node/3306047892"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3306047893",
+        "id": "node/3306047893",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Owadie_Leib_Zwecher_Stolperstein_Dresden.JPG",
@@ -3689,12 +3689,12 @@
           51.0538136
         ]
       },
-      "id": "node/3306047893"
+      "fid": "node/3306047893"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3567172640",
+        "id": "node/3567172640",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Anna Hahnewald Stolperstein Dresden.JPG",
@@ -3715,12 +3715,12 @@
           51.0260729
         ]
       },
-      "id": "node/3567172640"
+      "fid": "node/3567172640"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3567172641",
+        "id": "node/3567172641",
         "fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
         "historic": "memorial",
         "image": "File:Edgar Hahnewald Stolperstein Dresden.JPG",
@@ -3741,12 +3741,12 @@
           51.0260875
         ]
       },
-      "id": "node/3567172641"
+      "fid": "node/3567172641"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5212327910",
+        "id": "node/5212327910",
         "historic": "memorial",
         "memorial:text": "Hier wohnte Aurelie Beck geb. Simon Jg. 1856 deportiert 1942 Theresienstadt ermordet 8.9.1942",
         "memorial:type": "stolperstein",
@@ -3759,12 +3759,12 @@
           51.0400068
         ]
       },
-      "id": "node/5212327910"
+      "fid": "node/5212327910"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5395916021",
+        "id": "node/5395916021",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_Kurt_Schlosser.jpg",
         "memorial:addr": "Leipziger Str. 70/72",
@@ -3784,12 +3784,12 @@
           51.0738167
         ]
       },
-      "id": "node/5395916021"
+      "fid": "node/5395916021"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287061372",
+        "id": "node/6287061372",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_für_Berta_Steinhart,_Pfotenhauer_Strasse_16,_Dresden.JPG",
         "inscription": "Hier wohnte Berta Steinhart geb. Rosenberger / Jg. 1881 / deportiert 1942 Riga / ermordet 5.11.1943 Auschwitz",
@@ -3804,12 +3804,12 @@
           51.0554054
         ]
       },
-      "id": "node/6287061372"
+      "fid": "node/6287061372"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287061373",
+        "id": "node/6287061373",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Herbert_Steinhart,_Pfotenhauer_Strasse_16,_Dresden.JPG",
         "inscription": "Hier wohnte Herbert Steinhart / Jg. 1914 / deportiert 1942 Riga / 1944 Stutthof / ermordet 27.11.1944 Natzweiler",
@@ -3824,12 +3824,12 @@
           51.0554078
         ]
       },
-      "id": "node/6287061373"
+      "fid": "node/6287061373"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287061374",
+        "id": "node/6287061374",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Oskar_Steinhart,_Pfotenhauer_Strasse_16,_Dresden.JPG",
         "inscription": "Hier wohnte Oskar Steinhart / Jg. 1883 / deportiert 1942 Riga / ermordet Nov. 1943 Auschwitz",
@@ -3845,12 +3845,12 @@
           51.0554067
         ]
       },
-      "id": "node/6287061374"
+      "fid": "node/6287061374"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287061375",
+        "id": "node/6287061375",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Erich_Steinhart,_Pfotenhauer_Strasse_16,_Dresden.JPG",
         "inscription": "Hier wohnte Erich Steinhart / Jg. 1912 / deportiert 1942 Riga / 1944 Stutthof / ermordet in Buchenwald",
@@ -3865,12 +3865,12 @@
           51.055409
         ]
       },
-      "id": "node/6287061375"
+      "fid": "node/6287061375"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287061376",
+        "id": "node/6287061376",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Otto_Ernst_Faber,_Hopfgartenstrasse_2,_Dresden_(2).JPG",
         "inscription": "Hier wohnte Otto Ernst Faber / Jg. 1896 / verhaftet verurteilt § 175 Sachsenhausen / ermordet 4.12.1939",
@@ -3885,12 +3885,12 @@
           51.0546851
         ]
       },
-      "id": "node/6287061376"
+      "fid": "node/6287061376"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287198848",
+        "id": "node/6287198848",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Martha_Juliusburger,_Mansfelder_Strasse_17,_Dresden.JPG",
         "inscription": "Hier wohnte Martha Juliusburger geb. Zeidler / Jg. 1891 / gedemütigt/entrechtet / überlebt",
@@ -3905,12 +3905,12 @@
           51.0418476
         ]
       },
-      "id": "node/6287198848"
+      "fid": "node/6287198848"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287198849",
+        "id": "node/6287198849",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Arthur_Juliusburger,_Mansfelder_Strasse_17,_Dresden.JPG",
         "inscription": "Hier wohnte Arthur Juliusburger / Jg. 1888 / mehrmals verhaftet / Zwangsarbeit / ermordet 23.4.1943 Polizeigefängnis",
@@ -3925,12 +3925,12 @@
           51.0418492
         ]
       },
-      "id": "node/6287198849"
+      "fid": "node/6287198849"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287198850",
+        "id": "node/6287198850",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Else_Estreicher,_Spenerstrasse_36,_Dresden.JPG",
         "inscription": "Hier wohnte Else Estreicher geb. Göbler / Jg. 1900 / gedemütigt/entrechtet / überlebt",
@@ -3945,12 +3945,12 @@
           51.0451495
         ]
       },
-      "id": "node/6287198850"
+      "fid": "node/6287198850"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287198851",
+        "id": "node/6287198851",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Willy_Nathan_Estreicher,_Spenerstrasse_36,_Dresden.JPG",
         "inscription": "Hier wohnte Willy Nathan Estreicher / Jg. 1879 / verhaftet 8.12.1941 Gestapo Dresden / 1942 Buchenwald / ermordet 2.7.1942",
@@ -3965,12 +3965,12 @@
           51.0451436
         ]
       },
-      "id": "node/6287198851"
+      "fid": "node/6287198851"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6287198852",
+        "id": "node/6287198852",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hedwig_L%C3%B6wenstamm,_Laubestrasse_4,_Dresden.JPG",
         "inscription": "Hier wohnte Hedwig Löwenstamm / Jg. 1891 / interniert 1942 Hellerberge / deportiert 1943 Auschwitz / ermordet 3.3.1943",
@@ -3985,12 +3985,12 @@
           51.0430517
         ]
       },
-      "id": "node/6287198852"
+      "fid": "node/6287198852"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294226424",
+        "id": "node/6294226424",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Siegfried_Sonnenschein,_Gerhart-Hauptmann-Strasse_1,_Dresden.JPG",
         "inscription": "Hier wohnte Siegfried Sonnenschein, Jg. 1909, Flucht 1939 Shanghai, USA",
@@ -4005,12 +4005,12 @@
           51.0372965
         ]
       },
-      "id": "node/6294226424"
+      "fid": "node/6294226424"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294226425",
+        "id": "node/6294226425",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Johanna_Sophie_Wollf,_Franz-Liszt-Stra%C3%9Fe_Ecke_Wiener_Strasse,_Dresden.JPG",
         "inscription": "Hier wohnte Johanna Sophie Wollf geb. Gutmann, Jg. 1877, gedemütigt / entrechtet, Flucht in den Tod 27.2.1942",
@@ -4025,12 +4025,12 @@
           51.0330072
         ]
       },
-      "id": "node/6294226425"
+      "fid": "node/6294226425"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294226426",
+        "id": "node/6294226426",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Julius_Ferdinand_Wollf,_Franz-Liszt-Stra%C3%9Fe_Ecke_Wiener_Strasse,_Dresden.JPG",
         "inscription": "Hier wohnte Julius Ferdinand Wollf, Jg. 1871, gedemütigt / entrechtet, Flucht in den Tod 27.2.1942",
@@ -4045,12 +4045,12 @@
           51.0330051
         ]
       },
-      "id": "node/6294226426"
+      "fid": "node/6294226426"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294314717",
+        "id": "node/6294314717",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Ilija_Stojanovic,_Hochschulstrasse_20A,_Dresden.JPG",
         "inscription": "Hier wohnte Ilija Stojanovic, Jg. 1917, im Widerstand, verhaftet 1944, Gefängnis Radeberg, 1945 Buchenwald, Todesmarsch Flossenbürg, befreit, tot an Haftfolgen 10.5.1945",
@@ -4065,12 +4065,12 @@
           51.0354344
         ]
       },
-      "id": "node/6294314717"
+      "fid": "node/6294314717"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294314718",
+        "id": "node/6294314718",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Laura_Jonas.jpg",
         "inscription": "Hier wohnte Laura Jonas geb. Loewenthal, Jg. 1867, Flucht 1938 Holland, interniert Westerbork, deportiert 1943 Sobibor, ermordet 23.7.1943",
@@ -4085,12 +4085,12 @@
           51.0332256
         ]
       },
-      "id": "node/6294314718"
+      "fid": "node/6294314718"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294314719",
+        "id": "node/6294314719",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Simon_Sigismund_Jonas.jpg",
         "inscription": "Hier wohnte Simon Sigismund Jonas, Jg. 1866, Flucht 1938 Holland, interniert Westerbork, deportiert 1943 Sobibor, ermordet 23.7.1943",
@@ -4105,12 +4105,12 @@
           51.0332172
         ]
       },
-      "id": "node/6294314719"
+      "fid": "node/6294314719"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294314720",
+        "id": "node/6294314720",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Samuel_Husch.jpg",
         "inscription": "Hier wohnte Samuel Husch, Jg. 1868, gedemütigt / entrechtet, tot 4.7.1942",
@@ -4125,12 +4125,12 @@
           51.0328508
         ]
       },
-      "id": "node/6294314720"
+      "fid": "node/6294314720"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294335831",
+        "id": "node/6294335831",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Berta_Kaps,_Schweizer_Strasse_Ecke_Kaitzer_Strasse,_Dresden_(1).JPG",
         "inscription": "Hier wohnte Berta Kaps geb. Beck, Jg. 1882, deportiert 1943 Auschwitz, ermordet 1.11.1943",
@@ -4145,12 +4145,12 @@
           51.0396931
         ]
       },
-      "id": "node/6294335831"
+      "fid": "node/6294335831"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6294369765",
+        "id": "node/6294369765",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hans_Otto,_Fr%C3%BChlingstrasse_12,_Dresden_(1).JPG",
         "inscription": "Hier wohnte Hans Otto, Jg. 1900, im Widerstand / KPD, Gewerkschafter, verhaftet 14.11.1933, Gestapo-Zentrale Berlin, gefoltert, ermordet 24.11.1933",
@@ -4165,12 +4165,12 @@
           51.0692939
         ]
       },
-      "id": "node/6294369765"
+      "fid": "node/6294369765"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6296105190",
+        "id": "node/6296105190",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Sabina_Goldschl%C3%A4ger,_Br%C3%BChlscher_Garten_1,_Dresden.JPG",
         "inscription": "Hier wohnte Sabina Goldschläger, Jg. 1922, Flucht 1938 Rumänien, verhaftet, Lager Obodowka, ermordet 1941",
@@ -4185,12 +4185,12 @@
           51.0519811
         ]
       },
-      "id": "node/6296105190"
+      "fid": "node/6296105190"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6296105191",
+        "id": "node/6296105191",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Anna_Goldschl%C3%A4ger,_Br%C3%BChlscher_Garten_1,_Dresden.JPG",
         "inscription": "Hier wohnte Anna Goldschläger, Jg. 1919, Flucht 1939 England, USA",
@@ -4205,12 +4205,12 @@
           51.0519776
         ]
       },
-      "id": "node/6296105191"
+      "fid": "node/6296105191"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6296105192",
+        "id": "node/6296105192",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Max_Goldschl%C3%A4ger,_Br%C3%BChlscher_Garten_1,_Dresden.JPG",
         "inscription": "Hier wohnte Max Goldschläger, Jg. 1898, Flucht 1938 Rumänien, Palästina",
@@ -4225,12 +4225,12 @@
           51.051979
         ]
       },
-      "id": "node/6296105192"
+      "fid": "node/6296105192"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6296105193",
+        "id": "node/6296105193",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Sofia_Goldschl%C3%A4ger,_Br%C3%BChlscher_Garten_1,_Dresden.JPG",
         "inscription": "Hier wohnte Sofia Goldschläger geb. Wind, Jg. 1891, Flucht 1938 Rumänien, Palästina",
@@ -4245,12 +4245,12 @@
           51.0519828
         ]
       },
-      "id": "node/6296105193"
+      "fid": "node/6296105193"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032759",
+        "id": "node/6298032759",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Max_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Max Blumenkranz, Jg. 1917, Flucht 1938 Argentinien",
@@ -4265,12 +4265,12 @@
           51.0494445
         ]
       },
-      "id": "node/6298032759"
+      "fid": "node/6298032759"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032760",
+        "id": "node/6298032760",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Berta_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Berta Blumenkranz verh. Cohn, Jg. 1916, Flucht 1938 Argentinien",
@@ -4285,12 +4285,12 @@
           51.0494468
         ]
       },
-      "id": "node/6298032760"
+      "fid": "node/6298032760"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032761",
+        "id": "node/6298032761",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Fritz_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Fritz Blumenkranz, Jg. 1914, Flucht 1937 Argentinien",
@@ -4305,12 +4305,12 @@
           51.0494489
         ]
       },
-      "id": "node/6298032761"
+      "fid": "node/6298032761"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032762",
+        "id": "node/6298032762",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hans_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Hans Blumenkranz, Jg. 1912, Flucht 1937 Argentinien",
@@ -4325,12 +4325,12 @@
           51.0494508
         ]
       },
-      "id": "node/6298032762"
+      "fid": "node/6298032762"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032763",
+        "id": "node/6298032763",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Michael_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Michael Blumenkranz, Jg. 1911, Flucht 1937 Argentinien",
@@ -4345,12 +4345,12 @@
           51.049453
         ]
       },
-      "id": "node/6298032763"
+      "fid": "node/6298032763"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032764",
+        "id": "node/6298032764",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hanna_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Hanna Blumenkranz geb. Müller, Jg. 1888, Flucht 1938 Argentinien",
@@ -4365,12 +4365,12 @@
           51.0494485
         ]
       },
-      "id": "node/6298032764"
+      "fid": "node/6298032764"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032765",
+        "id": "node/6298032765",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Gabriel_Blumenkranz,_Wallstrasse_9,_Dresden.JPG",
         "inscription": "Hier wohnte Gabriel Blumenkranz, Jg. 1888, Flucht 1938 Argentinien",
@@ -4385,12 +4385,12 @@
           51.0494503
         ]
       },
-      "id": "node/6298032765"
+      "fid": "node/6298032765"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032766",
+        "id": "node/6298032766",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hans-Werner_Kastner,_Marschnerstrasse_21,_Dresden.JPG",
         "inscription": "Hier wohnte Hans-Werner Kastner, Jg. 1913, Flucht 1939 England",
@@ -4405,12 +4405,12 @@
           51.0477721
         ]
       },
-      "id": "node/6298032766"
+      "fid": "node/6298032766"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032767",
+        "id": "node/6298032767",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Alexandrine_Kastner,_Marschnerstrasse_21,_Dresden.JPG",
         "inscription": "Hier wohnte Alexandrine Kastner geb. Jacoby, Jg. 1877, deportiert 1942 Ghetto Warschau, ermordet",
@@ -4425,12 +4425,12 @@
           51.0477685
         ]
       },
-      "id": "node/6298032767"
+      "fid": "node/6298032767"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032768",
+        "id": "node/6298032768",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Otto_Kastner,_Marschnerstrasse_21,_Dresden.JPG",
         "inscription": "Hier wohnte Otto Kastner, Jg. 1880, verhaftet 1937, Flucht in den Tod 21.2.1938 Polizeigefängnis",
@@ -4445,12 +4445,12 @@
           51.0477731
         ]
       },
-      "id": "node/6298032768"
+      "fid": "node/6298032768"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032769",
+        "id": "node/6298032769",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_C%C3%A4cilie_Geyer,_Mathildenstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Cäcilie Geyer, Jg. 1912, Flucht 1939 England",
@@ -4465,12 +4465,12 @@
           51.0493485
         ]
       },
-      "id": "node/6298032769"
+      "fid": "node/6298032769"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032770",
+        "id": "node/6298032770",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Max_Geyer,_Mathildenstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Max Geyer, Jg. 1918, 'Schutzhaft' 1938, Dachau, Flucht 1939 England",
@@ -4485,12 +4485,12 @@
           51.0493544
         ]
       },
-      "id": "node/6298032770"
+      "fid": "node/6298032770"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032771",
+        "id": "node/6298032771",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Minna_Geyer,_Mathildenstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Minna Geyer, Jg. 1914, Flucht 1939 England",
@@ -4505,12 +4505,12 @@
           51.0493517
         ]
       },
-      "id": "node/6298032771"
+      "fid": "node/6298032771"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032772",
+        "id": "node/6298032772",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Salcia_Geyer,_Mathildenstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Salcia Geyer geb. Kandel, Jg. 1883, deportiert 1942 Riga, 1943 Auschwitz, ermordet Nov. 1943",
@@ -4525,12 +4525,12 @@
           51.0493526
         ]
       },
-      "id": "node/6298032772"
+      "fid": "node/6298032772"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032773",
+        "id": "node/6298032773",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hans_Nagelstock,_Pillnitzer_Stra%C3%9Fe_34,_Dresden_(1).JPG",
         "inscription": "Hier wohnte Hans Nagelstock, Jg. 1906, mehrmals verhaftet wegen § 175, Gefängnis Bautzen, 1941 Sachsenhausen, ermordet 16.2.1942",
@@ -4545,12 +4545,12 @@
           51.0500712
         ]
       },
-      "id": "node/6298032773"
+      "fid": "node/6298032773"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032774",
+        "id": "node/6298032774",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_G%C3%BCnther_Natowitz,_Pestalozzistrasse_17,_Dresden.JPG",
         "inscription": "Hier wohnte Günther Natowitz, Jg. 1922, Kindertransport 1939 Holland, interniert / deportiert Auschwitz, Sachsenhausen, befreit",
@@ -4565,12 +4565,12 @@
           51.0520271
         ]
       },
-      "id": "node/6298032774"
+      "fid": "node/6298032774"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032775",
+        "id": "node/6298032775",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Leonard_Natowitz,_Pestalozzistrasse_17,_Dresden.JPG",
         "inscription": "Hier wohnte Leonard Natowitz, Jg. 1914, interniert 1942 Hellerberge, deportiert 1943 Auschwitz, 1945 Todesmarsch Buchenwald, befreit",
@@ -4585,12 +4585,12 @@
           51.0520222
         ]
       },
-      "id": "node/6298032775"
+      "fid": "node/6298032775"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032776",
+        "id": "node/6298032776",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Feiga_Fanny_Natowitz,_Pestalozzistrasse_17,_Dresden.JPG",
         "inscription": "Hier wohnte Feiga Fanny Natowitz geb. Weinsieder, Jg. 1888, interniert 1942 Hellerberge, deportiert 1943, ermordet in Auschwitz",
@@ -4605,12 +4605,12 @@
           51.0520284
         ]
       },
-      "id": "node/6298032776"
+      "fid": "node/6298032776"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032777",
+        "id": "node/6298032777",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Ignatz_Isaak_Natowitz,_Pestalozzistrasse_17,_Dresden.JPG",
         "inscription": "Hier wohnte Ignatz Isaak Natowitz, Jg. 1885, interniert 1942 Hellerberge, deportiert 1943 Auschwitz, ermordet 3.3.1943",
@@ -4625,12 +4625,12 @@
           51.0520233
         ]
       },
-      "id": "node/6298032777"
+      "fid": "node/6298032777"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032778",
+        "id": "node/6298032778",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Toni_Langer,_Rietschelstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Toni Langer, Jg. 1923, 'Polenaktion' 1938 Beuthen / Bytom, ermordet im besetzten Polen",
@@ -4645,12 +4645,12 @@
           51.0535428
         ]
       },
-      "id": "node/6298032778"
+      "fid": "node/6298032778"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032779",
+        "id": "node/6298032779",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Max_Langer,_Rietschelstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Max Langer, Jg. 1913, Flucht 1936 Palästina",
@@ -4665,12 +4665,12 @@
           51.0535399
         ]
       },
-      "id": "node/6298032779"
+      "fid": "node/6298032779"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032780",
+        "id": "node/6298032780",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Rosa_Langer,_Rietschelstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Rosa Langer geb. Adler, Jg. 1887, 'Polenaktion' 1938 Beuthen / Bytom, ermordet im besetzten Polen",
@@ -4685,12 +4685,12 @@
           51.0535365
         ]
       },
-      "id": "node/6298032780"
+      "fid": "node/6298032780"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298032781",
+        "id": "node/6298032781",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Leo_Leiser_Langer,_Rietschelstrasse_15,_Dresden.JPG",
         "inscription": "Hier wohnte Leo Leiser Langer, Jg. 1887, 'Polenaktion' 1938 Beuthen / Bytom, ermordet im besetzten Polen",
@@ -4705,12 +4705,12 @@
           51.0535332
         ]
       },
-      "id": "node/6298032781"
+      "fid": "node/6298032781"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167499",
+        "id": "node/6298167499",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Doris_Ruth_Berlowitz,_Lukasstrasse_3,_Dresden.JPG",
         "inscription": "Hier wohnte Doris Ruth Berlowitz verh. Levy, Jg. 1925, Flucht 1936 Palästina",
@@ -4725,12 +4725,12 @@
           51.032288
         ]
       },
-      "id": "node/6298167499"
+      "fid": "node/6298167499"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167500",
+        "id": "node/6298167500",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Cilly_Berlowitz,_Lukasstrasse_3,_Dresden.JPG",
         "inscription": "Hier wohnte Cilly Berlowitz geb. Rowelsky, Jg. 1900, Flucht 1936 Palästina",
@@ -4745,12 +4745,12 @@
           51.0322905
         ]
       },
-      "id": "node/6298167500"
+      "fid": "node/6298167500"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167501",
+        "id": "node/6298167501",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Friedrich_Leopold_Berlowitz,_Lukasstrasse_3,_Dresden.JPG",
         "inscription": "Hier wohnte Dr. Friedrich L. Berlowitz, Jg. 1897, Flucht 1936 Palästina",
@@ -4765,12 +4765,12 @@
           51.032292
         ]
       },
-      "id": "node/6298167501"
+      "fid": "node/6298167501"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167502",
+        "id": "node/6298167502",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Claus_Peter_Reichenbach.jpg",
         "inscription": "Hier wohnte Claus Peter Reichenbach, Peter C. Rickenback, Jg. 1920, Flucht 1936 Schweden, Frankreich, Holland, England",
@@ -4785,12 +4785,12 @@
           51.0325476
         ]
       },
-      "id": "node/6298167502"
+      "fid": "node/6298167502"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167503",
+        "id": "node/6298167503",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Ursula_Eva_Reichenbach.jpg",
         "inscription": "Hier wohnte Ursula Eva Reichenbach, Jg. 1912, Flucht 1939 England",
@@ -4805,12 +4805,12 @@
           51.0325444
         ]
       },
-      "id": "node/6298167503"
+      "fid": "node/6298167503"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167504",
+        "id": "node/6298167504",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Lotte_Reichenbach.jpg",
         "inscription": "Hier wohnte Lotte Reichenbach geb. Reichenbach, Jg. 1887, interniert 1942 Hellerberge, deportiert 1943 Auschwitz, ermordet 3.3.1943",
@@ -4825,12 +4825,12 @@
           51.0325486
         ]
       },
-      "id": "node/6298167504"
+      "fid": "node/6298167504"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167505",
+        "id": "node/6298167505",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Martin_Joachim_Reichenbach.jpg",
         "inscription": "Hier wohnte Martin Joachim Reichenbach, Jg. 1879, 'Schutzhaft' 1938 Buchenwald, deportiert 1943 Auschwitz, ermordet 3.3.1943",
@@ -4845,12 +4845,12 @@
           51.0325452
         ]
       },
-      "id": "node/6298167505"
+      "fid": "node/6298167505"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167506",
+        "id": "node/6298167506",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Sofie_Isakowitz.jpg",
         "inscription": "Hier wohnte Sofie Isakowitz geb. Berlowitz, Jg. 1893, Flucht 1936 England",
@@ -4865,12 +4865,12 @@
           51.0325379
         ]
       },
-      "id": "node/6298167506"
+      "fid": "node/6298167506"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167507",
+        "id": "node/6298167507",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Hannelore_Isakowitz.jpg",
         "inscription": "Hier wohnte Hannelore 'Lore' Isakowitz verh. Petzal, Jg. 1915, Flucht 1936 England",
@@ -4885,12 +4885,12 @@
           51.0325334
         ]
       },
-      "id": "node/6298167507"
+      "fid": "node/6298167507"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6298167508",
+        "id": "node/6298167508",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Erich_Max_Isakowitz.jpg",
         "inscription": "Hier wohnte Erich Max Isakowitz, Jg. 1891, Flucht 1936 England",
@@ -4905,12 +4905,12 @@
           51.0325294
         ]
       },
-      "id": "node/6298167508"
+      "fid": "node/6298167508"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6299344581",
+        "id": "node/6299344581",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Walter_Karl_Sch%C3%A4fer,_Rudolf-Leonhard-Stra%C3%9Fe_36,_Dresden.JPG",
         "inscription": "Hier wohnte Walter Karl Schäfer, Jg. 1910, Zeuge Jehovas, verhaftet 1942, Kriegsdienst verweigert, hingerichtet 26.9.1942 Brandenburg-Görden",
@@ -4925,12 +4925,12 @@
           51.0742619
         ]
       },
-      "id": "node/6299344581"
+      "fid": "node/6299344581"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6299344582",
+        "id": "node/6299344582",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Martha_Schein,_K%C3%B6nigsbr%C3%BCcker_Strasse_26,_Dresden.JPG",
         "inscription": "Hier wohnte Martha Schein geb. Ehrich, Jg. 1876, gedemütigt / entrechtet, Schutzraumverbot, tot bei Luftangriff 13.2.1945",
@@ -4945,12 +4945,12 @@
           51.0670981
         ]
       },
-      "id": "node/6299344582"
+      "fid": "node/6299344582"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6299344583",
+        "id": "node/6299344583",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Robert_Schein,_K%C3%B6nigsbr%C3%BCcker_Strasse_26,_Dresden.JPG",
         "inscription": "Hier wohnte Robert Schein, Jg. 1876, gedemütigt / entrechtet, Schutzraumverbot, tot bei Luftangriff 13.2.1945",
@@ -4965,12 +4965,12 @@
           51.0671022
         ]
       },
-      "id": "node/6299344583"
+      "fid": "node/6299344583"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6299377049",
+        "id": "node/6299377049",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Helga_Margot_Gr%C3%BCnewald,_Gro%C3%9Fenhainer_Strasse_194,_Dresden.JPG",
         "inscription": "Hier wohnte Helga Margot Grünewald verh. Weinberg, Jg. 1924, Flucht Holland, interniert Westerbork, deportiert 1943 Sobibor, ermordet 23.7.1943",
@@ -4985,12 +4985,12 @@
           51.0954133
         ]
       },
-      "id": "node/6299377049"
+      "fid": "node/6299377049"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6299377050",
+        "id": "node/6299377050",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Albert_Hensel,_Volkersdorfer_Strasse_3,_Dresden_(1).JPG",
         "inscription": "Hier wohnte Albert Hensel, Jg. 1895, im Widerstand / KPD, verhaftet 1941 'Vorbereitung zum Hochverrat' Polizeigefängnis, hingerichtet 5.6.1942 Berlin-Plötzensee",
@@ -5005,12 +5005,12 @@
           51.0874668
         ]
       },
-      "id": "node/6299377050"
+      "fid": "node/6299377050"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6475825220",
+        "id": "node/6475825220",
         "alt_name": "Margareta Beate Schmitz",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Margareta_Beate_Schmitz,_N%C3%BCrnberger_Strasse_28g,_Dresden.JPG",
@@ -5027,12 +5027,12 @@
           51.0332261
         ]
       },
-      "id": "node/6475825220"
+      "fid": "node/6475825220"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6482878645",
+        "id": "node/6482878645",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Karl_Blochwitz,_Dresdner_Strasse_125,_Dresden.JPG",
         "inscription": "Hier wohnte Karl Blochwitz, Jg. 1899, Zeuge Jehovas, verhaftet 1940, Kriegsdienst verweigert, hingerichtet 3.4.1940 Bienitz bei Leipzig",
@@ -5047,12 +5047,12 @@
           51.0837619
         ]
       },
-      "id": "node/6482878645"
+      "fid": "node/6482878645"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6534327071",
+        "id": "node/6534327071",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Otto_Degenkolb,_Alte_Moritzburger_Strasse_43,_Dresden.JPG",
         "inscription": "Hier wohnte Otto Degenkolb, Jg. 1896, Zeuge Jehovas, verhaftet 1943 Kriegsdienst verweigert, hingerichtet 11.2.1944 Halle/Saale",
@@ -5067,12 +5067,12 @@
           51.1511164
         ]
       },
-      "id": "node/6534327071"
+      "fid": "node/6534327071"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6534327072",
+        "id": "node/6534327072",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Kurt_Degenkolb,_Alte_Moritzburger_Strasse_43,_Dresden.JPG",
         "inscription": "Hier wohnte Kurt Degenkolb, Jg. 1924, Zeuge Jehovas, verhaftet 1943 Kriegsdienst verweigert, hingerichtet 20.7.1943 Brandenburg-Görden",
@@ -5087,12 +5087,12 @@
           51.1511213
         ]
       },
-      "id": "node/6534327072"
+      "fid": "node/6534327072"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6535010877",
+        "id": "node/6535010877",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Fritz_Aron_Meinhardt,_Fritz-Meinhardt-Strasse_22,_Dresden.JPG",
         "inscription": "Hier wohnte Fritz Aron Meinhardt, Jg. 1899, mehrmals verhaftet, Zwangsarbeit, ermordet 23.4.1943 Polizeigefängnis",
@@ -5107,12 +5107,12 @@
           50.997785
         ]
       },
-      "id": "node/6535010877"
+      "fid": "node/6535010877"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6535039413",
+        "id": "node/6535039413",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Robert_Kronenthal,_Behrischstrasse_7,_Dresden_(2).JPG",
         "inscription": "Hier wohnte Robert Kronenthal, Jg. 1896, \"Schutzhaft\" 1938 Buchenwald, deportiert Auschwitz, ermordet 11.1.1943",
@@ -5127,12 +5127,12 @@
           51.0452968
         ]
       },
-      "id": "node/6535039413"
+      "fid": "node/6535039413"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6535039414",
+        "id": "node/6535039414",
         "historic": "memorial",
         "image": "https://commons.wikimedia.org/wiki/File:Stolperstein_f%C3%BCr_Emanuel_Goldberg,_Oeserstrasse_5,_Dresden_(2).JPG",
         "inscription": "Hier wohnte Emanuel Goldberg, Jg. 1881, Flucht 1933 Frankreich, 1937 Palästina",
@@ -5147,7 +5147,7 @@
           51.0536704
         ]
       },
-      "id": "node/6535039414"
+      "fid": "node/6535039414"
     }
   ]
 }
