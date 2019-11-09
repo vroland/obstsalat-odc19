@@ -11,7 +11,7 @@ Node  = namedtuple("Node", ["id", "location", "metadata"])
 Edge  = namedtuple("Edge", ["u", "v"])
 
 
-path = "../../Dresden_EPSG_4326/Tourismus/Sehenswürdigkeiten.json"
+path = "../../geojson/Sehenswürdigkeiten.geojson"
 name = path.split("/")[-1].split(".")[0]
 
 raw = json.load(open(path))["features"]
