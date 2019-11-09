@@ -1,0 +1,4 @@
+Themensammlung von Dateien, die verwendet werden könnten (Historie, Stolpersteine)
+
+
+Zukunftsstadt.geojson -- Nachhaltigkeitspunkte wie Reperaturcafés oder Gärten und Loseläden
