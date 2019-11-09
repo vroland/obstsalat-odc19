@@ -4,6 +4,7 @@
 import sys
 import json
 from collections import namedtuple
+import math
 
 Graph = namedtuple("Graph", ["nodes", "edges", "distance_matrix"])
 Node  = namedtuple("Node", ["id", "location", "metadata"])
@@ -24,7 +25,7 @@ for feature in raw:
     nodes.append(node)
 
 def dist(u, v):
-    return u.location[0]**2 + u.location[1]**2
+    return int(100*math.sqrt((u.location[0] - v.location[0])**2 + (u.location[1] - v.location[1])**2)) + 1
 
 edges = [Edge(u, v) for u in nodes for v in nodes]
 distance_matrix = [[dist(u,v) for v in nodes] for u in nodes]
