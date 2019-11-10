@@ -49,6 +49,8 @@ def create_data_model(graph, start):
     start_node = sorted(list(range(len(graph.nodes))), key=lambda n: dist(n))[0]
     print ("start node:", start_node, graph.nodes[start_node])
     data = {}
+    data['start_coords'] = start
+    data['first_node_coords'] = graph.nodes[start_node].location
     data['graph'] = graph
     data['base_costs'] = graph.distance_matrix
     data['time_matrix'] = graph.distance_matrix
@@ -65,6 +67,10 @@ def section_geometry(start, end):
 def solution_to_json(data, manager, routing, assignment):
     """Prints assignment on console."""
     # Display dropped nodes.
+
+    if not assignment:
+        return json.dumps(None)
+
     dropped_nodes = []
     for node in range(routing.Size()):
         if routing.IsStart(node) or routing.IsEnd(node):
@@ -96,6 +102,14 @@ def solution_to_json(data, manager, routing, assignment):
     answer["route"] = route_output
     answer["trips"] = {}
     round_trip_list = route_output + [data['depot']]
+    answer["trips"]["start"] = {}
+    answer["trips"]["start"]["time"] = 0
+    answer["trips"]["start"]["waypoints"] = section_geometry(
+        start=data['start_coords'],
+        end=data['first_node_coords']
+    )
+
+
     for i, n in enumerate(round_trip_list[:-2]):
         m = round_trip_list[i + 1]
         answer["trips"][n] = {}
