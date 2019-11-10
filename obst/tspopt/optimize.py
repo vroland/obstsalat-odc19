@@ -52,6 +52,14 @@ def create_data_model(graph, start):
     data['start_coords'] = start
     data['first_node_coords'] = graph.nodes[start_node].location
 
+    # adjust for first node
+    initial_route = directions(client, (data['start_coords'], data['first_node_coords']), profile="foot-walking", geometry=True, format="geojson")
+    if not initial_route["features"][0]["properties"]["summary"]:
+        data['initial_time'] = 0
+    else:
+        data['initial_time'] = int(initial_route["features"][0]["properties"]["summary"]["duration"] / 60)
+
+
     data['graph'] = graph
     data['base_costs'] = graph.distance_matrix
     data['time_matrix'] = graph.distance_matrix
@@ -104,11 +112,13 @@ def solution_to_json(data, manager, routing, assignment):
     answer["trips"] = {}
     round_trip_list = route_output + [data['depot']]
     answer["trips"]["start"] = {}
-    answer["trips"]["start"]["time"] = 0
     answer["trips"]["start"]["waypoints"] = section_geometry(
         start=data['start_coords'],
         end=data['first_node_coords']
     )
+
+    print (data['initial_time'])
+    answer["trips"]["start"]["time"] = data['initial_time']
 
 
     for i, n in enumerate(round_trip_list[:-2]):
@@ -137,14 +147,7 @@ def find_route(graph, start, timeout, time_per_stop):
     # Instantiate the data problem.
     data = create_data_model(graph, start)
 
-    # adjust for first node
-    initial_route = directions(client, (data['start_coords'], data['first_node_coords']), profile="foot-walking", geometry=True, format="geojson")
-    initial_time = 0
-    if not initial_route["features"][0]["properties"]["summary"]:
-        initial_time = 0
-    else:
-        initial_time = int(initial_route["features"][0]["properties"]["summary"]["duration"] / 60)
-
+    initial_time = data['initial_time']
     print ("initial time", initial_time)
     timeout = max(0, timeout - initial_time)
 

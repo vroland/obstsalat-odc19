@@ -278,7 +278,6 @@ p {
 
 <script type="text/javascript">
   
-<<<<<<< HEAD
 var max_route_length=50;
 var stop_time=10;
 
@@ -293,82 +292,41 @@ function updateTimePerSlot(val) {
   stop_time= val;
   find_route();
 }
-=======
-  var slider_var=50;
-
-  function updateTextInput(val) {
-    document.getElementById('textInput').value=val; 
-    slider_var= val;
-    find_route();
-  }
 </script>
-
->>>>>>> styling
-
 
 
 
   <label class="containercheckbox">Sehenswürdigkeiten
-      <input type="checkbox" checked="checked" value="sehenswuerdigkeiten" onclick="find_route();"/>
+      <input name="theme" type="radio" checked value="sehenswuerdigkeiten" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
     <label class="containercheckbox">Zukunftsstadt
-      <input type="checkbox"  value="Zukunftsstadt" onclick="find_route();"/>
+      <input name="theme" type="radio"  value="Zukunftsstadt" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
     <label class="containercheckbox">Nette Toiletten
-      <input type="checkbox"  value="bereinigte_Toiletten" onclick="find_route();"/>
+      <input name="theme" type="radio"  value="bereinigte_Toiletten" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
     <label class="containercheckbox">Stolpersteine
-      <input type="checkbox"  value="stolpersteine" onclick="find_route();"/>
+      <input name="theme" type="radio"  value="stolpersteine" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
 
-<<<<<<< HEAD
-  <label for="myRange" id="lengthlbl">Max. Länge: 50</label></br>
+  <label style="margin-top:50px;" class="containercheckbox2" for="myRange" id="lengthlbl">Max. Länge: 50</label></br>
   <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="200" onclick="updateTextInput(this.value);" value=50>
-  <label for="time_per_stop" id="stoplbl">Zeit pro Station: 10</label></br>
+  <label style="margin-top:50px;" class="containercheckbox2" for="time_per_stop" id="stoplbl">Zeit pro Station: 10</label></br>
   <input type="range" class="slider" id="time_per_stop" name="rangeInput" min="0" max="30" onclick="updateTimePerSlot(this.value);" value=10>
-
-  <input type="radio" id="theme" name="theme" value="sehenswuerdigkeiten" checked onclick="find_route();"/>
-  <label for="genderm">Sehenswürdigkeiten</label></br>
-  <input type="radio" id="theme" name="theme" value="Zukunftsstadt" onclick="find_route();"/>
-  <label for="genderf">Zukunftsstadt</label></br>
-  <input type="radio" id="theme" name="theme" value="bereinigte_Toiletten" onclick="find_route();"/>
-  <label for="genderf">Nette Toiletten</label></br>
-  <input type="radio" id="theme" name="theme" value="stolpersteine" onclick="find_route();"/>
-  <label for="genderf">Stolpersteine</label></br>
 
 </div>
 
 <button onclick="find_route()">Route Finden!</button>
 <p>Routenlänge: <span id="routelen"></span></p>
 <p>Route:<br /> <span id="routeinfo"></span></p>
-=======
-
-
-<label style="margin-top:50px;" class="containercheckbox2">Zeit
-  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onchange="updateTextInput(this.value);">
-  <input type="text" id="textInput" value="50">
-  </label>
-
-
-
-
-<button class="button" onclick="find_route()">Click me</button>
-
-
-
-</div>
-
-<!-- <button onclick="deleteFunction()">Click me</button> -->
-
->>>>>>> styling
 
 </div>
 <div id="mapid" style="width: 80%; height: 1000px;">
@@ -408,7 +366,6 @@ function displayData(routeinfo) {
   markers = L.layerGroup();
   markers.addTo(mymap);
 
-  console.log(routeinfo.route.length);
   
   var route_start = routeinfo.trips["start"];
   for (var j=0; j<route_start.waypoints.length; j++) {
@@ -416,7 +373,9 @@ function displayData(routeinfo) {
     points.push(new L.LatLng(wp[1], wp[0]));
   }
 
-  document.getElementById('routelen').innerHTML = routeinfo.round_time + "min. + " + (routeinfo.route.length - 1)* stop_time + "min. an Stationen";
+  console.log(route_start.time );
+
+  document.getElementById('routelen').innerHTML = (routeinfo.round_time + route_start.time) + "min. + " + ((routeinfo.route.length - 1)* stop_time) + "min. an Stationen";
 
   var list = "(" + (routeinfo.route.length - 1) + " Stationen) <br/>";
 
@@ -424,8 +383,18 @@ function displayData(routeinfo) {
   
     var route_node = routeinfo.nodes[routeinfo.route[i]];
     var route_trip = routeinfo.trips[routeinfo.route[i]];
-    var caption = route_node[2].einrichtung;
     var coords = [route_node[1][1], route_node[1][0]];
+
+
+    var caption = route_node[2].einrichtung;
+    var info = route_node[2].url;
+    if (!caption) {
+      caption = route_node[2].name;
+    }
+
+    if (!info) {
+      info = route_node[2]["memorial:text"];
+    }
 
     // Creates a red marker with the coffee icon
     var redMarker = L.ExtraMarkers.icon({
@@ -439,7 +408,7 @@ function displayData(routeinfo) {
     list += caption + "<br />"
     L.marker(coords, {icon: redMarker})
       .addTo(markers)
-      .bindPopup("<br/>"+caption)
+      .bindPopup("<br/>"+caption + "<br/><br/>" + info)
       .openPopup();
 
     for (var j=0; j<route_trip.waypoints.length; j++) {
