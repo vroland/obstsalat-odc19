@@ -165,9 +165,10 @@ body {
 var slider_var=50;
 
 function updateTextInput(val) {
-          document.getElementById('textInput').value=val; 
-          slider_var= val;
-        }
+  document.getElementById('textInput').value=val; 
+  slider_var= val;
+  find_route();
+}
 
 
 </script>
@@ -185,15 +186,21 @@ function updateTextInput(val) {
 
   <p>Zeit:<input type="text" id="textInput" value="50"></p>
   <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onchange="updateTextInput(this.value);">
-
-
+  <input type="radio" id="theme" name="theme" value="sehenswuerdigkeiten" checked onclick="find_route();"/>
+  <label for="genderm">Sehenswürdigkeiten</label></br>
+  <input type="radio" id="theme" name="theme" value="Zukunftsstadt" onclick="find_route();"/>
+  <label for="genderf">Zukunftsstadt</label></br>
+  <input type="radio" id="theme" name="theme" value="bereinigte_Toiletten" onclick="find_route();"/>
+  <label for="genderf">Nette Toiletten</label></br>
+  <input type="radio" id="theme" name="theme" value="stolpersteine" onclick="find_route();"/>
+  <label for="genderf">Stolpersteine</label></br>
 
 
 
 
 </div>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="find_route()">Click me</button>
 
 <button onclick="deleteFunction()">Click me</button>
 
@@ -210,6 +217,8 @@ function updateTextInput(val) {
 var x_average = 0;
 var y_average = 0;
 var markers = null;
+var start_position = [13.737930691215155, 51.049717431564794];
+
 
 // build map
 var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13);
@@ -244,11 +253,11 @@ function displayData(routeinfo) {
 
     // Creates a red marker with the coffee icon
     var redMarker = L.ExtraMarkers.icon({
-      //icon: 'fa-coffee',
+      icon: 'fa-leaf',
       markerColor: 'red',
       shape: 'square',
-      //prefix: 'fa',
-      innerHTML: "<span class='labeltext'>" + i.toString() + ": "+ caption + "</span>",
+      prefix: 'fa',
+      //innerHTML: "<span class='labeltext'>" + i.toString() + ": "+ caption + "</span>",
     });
 
     L.marker(coords, {icon: redMarker})
@@ -278,23 +287,35 @@ function displayData(routeinfo) {
       smoothFactor: 1
   });
   firstpolyline.addTo(markers);
+ 
+  // Creates a red marker with the coffee icon
+  var startMarker = L.ExtraMarkers.icon({
+    icon: 'fa-coffee',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa',
 
+    //innerHTML: "<span class='labeltext'>" + "start" + "</span>",
+  });
+
+  L.marker([start_position[1], start_position[0]], {icon: startMarker})
+    .addTo(markers)
+    .bindPopup("<br/>Start!")
+    .openPopup(); 
   var popup = L.popup();
 
   function onMapClick(e) {
-    popup
+    start_position = [e.latlng.lng, e.latlng.lat];
+    find_route();
+    /*
+                        popup
       .setLatLng(e.latlng)
       .setContent("You clicked the map at " + e.latlng.toString())
       .openOn(mymap);
+                        */
   }
 
   mymap.on('click', onMapClick);
-
-    // if (markers != undefined) {
-    //           markers.clearLayers();
-    //     };
-
-
 }
 
 
@@ -308,8 +329,11 @@ function deleteFunction(){
 
 
 
-function myFunction() {
+function find_route() {
 
+  var dataset = document.querySelector('input[name="theme"]:checked').value;
+
+  console.log("using dataset", dataset)
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -320,14 +344,13 @@ function myFunction() {
 
 
 
-  xmlhttp.open("GET", "http://localhost:8000/sehenswuerdigkeiten/13.737930691215155;51.049717431564794/"+slider_var, true);
+  xmlhttp.open("GET", "http://localhost:8000/" + dataset + "/" + start_position[0] + ";" + start_position[1] + "/"+slider_var, true);
   xmlhttp.send();
 
-    // var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13);
-
-
+    // var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13)
 }
-  
+ 
+find_route();
 </script>
 
 

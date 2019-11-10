@@ -63,7 +63,8 @@ def load_graph(raw):
 paths = [
         "../../geojson/bereinigte_Toiletten.geojson",
         "../../geojson/Zukunftsstadt.geojson",
-        "../../geojson/sehenswuerdigkeiten.geojson"
+        "../../geojson/sehenswuerdigkeiten.geojson",
+        "../../geojson/stolpersteine.geojson"
 ]
 
 if __name__ == "__main__":
