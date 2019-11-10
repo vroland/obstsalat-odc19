@@ -51,6 +51,7 @@ def create_data_model(graph, start):
     data = {}
     data['start_coords'] = start
     data['first_node_coords'] = graph.nodes[start_node].location
+
     data['graph'] = graph
     data['base_costs'] = graph.distance_matrix
     data['time_matrix'] = graph.distance_matrix
@@ -132,8 +133,20 @@ def solution_to_json(data, manager, routing, assignment):
 
 def find_route(graph, start, timeout):
     """Solve the CVRP problem."""
+
     # Instantiate the data problem.
     data = create_data_model(graph, start)
+
+    # adjust for first node
+    initial_route = directions(client, (data['start_coords'], data['first_node_coords']), profile="foot-walking", geometry=True, format="geojson")
+    initial_time = 0
+    if not initial_route["features"][0]["properties"]["summary"]:
+        initial_time = 0
+    else:
+        initial_time = int(initial_route["features"][0]["properties"]["summary"]["duration"] / 60)
+
+    print ("initial time", initial_time)
+    timeout = max(0, timeout - initial_time)
 
     # Create the routing index manager.
     manager = pywrapcp.RoutingIndexManager(len(data['base_costs']),
