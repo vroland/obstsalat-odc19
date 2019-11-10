@@ -170,7 +170,7 @@ def find_route(graph, start, timeout, time_per_stop):
     def time_callback(from_index, to_index):
         from_node = manager.IndexToNode(from_index)
         to_node = manager.IndexToNode(to_index)
-        return data['time_matrix'][from_node][to_node]+ (time_per_stop if to_node != data['depot'] else 0)
+        return data['time_matrix'][from_node][to_node]+ time_per_stop # if to_node != data['depot'] else 0)
 
     time_callback_index = routing.RegisterTransitCallback(time_callback)
 

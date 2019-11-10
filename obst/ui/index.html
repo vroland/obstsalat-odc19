@@ -166,13 +166,13 @@ var max_route_length=50;
 var stop_time=10;
 
 function updateTextInput(val) {
-  document.getElementById('lengthlbl').innerHTML = "Max. Länge: " + val
+  document.getElementById('lengthlbl').innerHTML = "Max. Länge: " + val + "min.";
   max_route_length=val;
   find_route();
 }
 
 function updateTimePerSlot(val) {  
-  document.getElementById('stoplbl').innerHTML = "Zeit pro Station: " + val
+  document.getElementById('stoplbl').innerHTML = "Zeit pro Station: " + val + "min.";
   stop_time= val;
   find_route();
 }
@@ -206,15 +206,11 @@ function updateTimePerSlot(val) {
   <input type="radio" id="theme" name="theme" value="stolpersteine" onclick="find_route();"/>
   <label for="genderf">Stolpersteine</label></br>
 
-
-
-
 </div>
 
-<button onclick="find_route()">Click me</button>
-
-<button onclick="deleteFunction()">Click me</button>
-
+<button onclick="find_route()">Route Finden!</button>
+<p>Routenlänge: <span id="routelen"></span></p>
+<p>Route:<br /> <span id="routeinfo"></span></p>
 
 </div>
 <div id="mapid" style="width: 80%; height: 1000px;">
@@ -262,12 +258,15 @@ function displayData(routeinfo) {
     points.push(new L.LatLng(wp[1], wp[0]));
   }
 
+  document.getElementById('routelen').innerHTML = routeinfo.round_time + "min. + " + (routeinfo.route.length - 1)* stop_time + "min. an Stationen";
+
+  var list = "(" + (routeinfo.route.length - 1) + " Stationen) <br/>";
 
   for (var i = 0; i < routeinfo.route.length; i++) {
   
     var route_node = routeinfo.nodes[routeinfo.route[i]];
     var route_trip = routeinfo.trips[routeinfo.route[i]];
-    var caption = JSON.stringify(route_node[2].einrichtung);
+    var caption = route_node[2].einrichtung;
     var coords = [route_node[1][1], route_node[1][0]];
 
     // Creates a red marker with the coffee icon
@@ -279,6 +278,7 @@ function displayData(routeinfo) {
       //innerHTML: "<span class='labeltext'>" + i.toString() + ": "+ caption + "</span>",
     });
 
+    list += caption + "<br />"
     L.marker(coords, {icon: redMarker})
       .addTo(markers)
       .bindPopup("<br/>"+caption)
@@ -294,6 +294,8 @@ function displayData(routeinfo) {
     y_average = y_average + coords[1];
 
   }
+  
+  document.getElementById('routeinfo').innerHTML = list
 
   x_average = x_average/routeinfo.route.length;
   y_average = y_average/routeinfo.route.length;
