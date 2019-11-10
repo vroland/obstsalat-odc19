@@ -131,7 +131,7 @@ def solution_to_json(data, manager, routing, assignment):
     return json.dumps(answer, indent=4)
 
 
-def find_route(graph, start, timeout):
+def find_route(graph, start, timeout, time_per_stop):
     """Solve the CVRP problem."""
 
     # Instantiate the data problem.
@@ -170,7 +170,7 @@ def find_route(graph, start, timeout):
     def time_callback(from_index, to_index):
         from_node = manager.IndexToNode(from_index)
         to_node = manager.IndexToNode(to_index)
-        return data['time_matrix'][from_node][to_node]
+        return data['time_matrix'][from_node][to_node]+ (time_per_stop if to_node != data['depot'] else 0)
 
     time_callback_index = routing.RegisterTransitCallback(time_callback)
 
@@ -235,7 +235,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         try:
-            _, graph_name, lonlat, timeout = self.path.split("/")
+            _, graph_name, lonlat, timeout, time_per_stop = self.path.split("/")
         except:
             print("invalid path:", self.path)
             self.send_response(404)
@@ -252,10 +252,11 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         print ("path:", self.path)
         timeout = int(timeout)
+        time_per_stop = int(time_per_stop)
         lonlat = list(map(float, lonlat.split(";")))
         graph = graphs[graph_name]
         print ("using timeout:", timeout)
-        self.wfile.write(find_route(graph, lonlat, timeout).encode("utf-8"))
+        self.wfile.write(find_route(graph, lonlat, timeout, time_per_stop).encode("utf-8"))
 
 if __name__ == '__main__':
 

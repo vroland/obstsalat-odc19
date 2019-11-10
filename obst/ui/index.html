@@ -162,11 +162,18 @@ body {
 
 <script type="text/javascript">
   
-var slider_var=50;
+var max_route_length=50;
+var stop_time=10;
 
 function updateTextInput(val) {
-  document.getElementById('textInput').value=val; 
-  slider_var= val;
+  document.getElementById('lengthlbl').innerHTML = "Max. Länge: " + val
+  max_route_length=val;
+  find_route();
+}
+
+function updateTimePerSlot(val) {  
+  document.getElementById('stoplbl').innerHTML = "Zeit pro Station: " + val
+  stop_time= val;
   find_route();
 }
 
@@ -184,8 +191,12 @@ function updateTextInput(val) {
 
 
 
-  <p>Zeit:<input type="text" id="textInput" value="50"></p>
-  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onclick="updateTextInput(this.value);">
+
+  <label for="myRange" id="lengthlbl">Max. Länge: 50</label></br>
+  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="200" onclick="updateTextInput(this.value);" value=50>
+  <label for="time_per_stop" id="stoplbl">Zeit pro Station: 10</label></br>
+  <input type="range" class="slider" id="time_per_stop" name="rangeInput" min="0" max="30" onclick="updateTimePerSlot(this.value);" value=10>
+
   <input type="radio" id="theme" name="theme" value="sehenswuerdigkeiten" checked onclick="find_route();"/>
   <label for="genderm">Sehenswürdigkeiten</label></br>
   <input type="radio" id="theme" name="theme" value="Zukunftsstadt" onclick="find_route();"/>
@@ -353,7 +364,7 @@ function find_route() {
 
   console.log("using dataset", dataset)
 
-  xmlhttp.open("GET", "http://localhost:8000/" + dataset + "/" + start_position[0] + ";" + start_position[1] + "/"+slider_var, true);
+  xmlhttp.open("GET", "http://localhost:8000/" + dataset + "/" + start_position[0] + ";" + start_position[1] + "/"+max_route_length + "/" + stop_time, true);
   xmlhttp.send();
 }
  
