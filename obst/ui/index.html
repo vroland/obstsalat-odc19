@@ -7,6 +7,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
   
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
@@ -23,6 +25,7 @@
 <style>
 .slidecontainer {
   width: 100%;
+
 }
 
 .slider {
@@ -69,15 +72,17 @@ body {
 
 /* Style the header */
 .header {
-  background-color: #f1f1f1;
-  padding: 20px;
+  background-color: white;
+  padding: 1px;
+  /*text-align: center;*/
   text-align: center;
+  padding-bottom: 20px: 
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: blue;
 }
 
 /* Style the topnav links */
@@ -88,6 +93,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-style: solid;
 }
 
 /* Change color on hover */
@@ -101,12 +107,14 @@ body {
   float: left;
   width: 20%;
   padding: 15px;
+
 }
 
 .map {
   float: right;
   width: 80%;
   padding: 15px;
+  border-style: solid;
 }
 
 /* Clear floats after the columns */
@@ -116,6 +124,117 @@ body {
   clear: both;
 }
 
+.button {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width:19.75%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+/* The container */
+.containercheckbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containercheckbox2 {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containercheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containercheckbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containercheckbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkcheckbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containercheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containercheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -142,26 +261,24 @@ body {
 </script>
 
 
-<div class="header">
-  <h1>Obstsalat macht Geschichte</h1>
-  <p>Stadtrundläufe mal anders.</p>
-</div>
 
-<div class="topnav">
-  <a href="#">Zukunftstadt</a>
-  <a href="#">Denkmäler</a>
-  <a href="#">Nette Toiletten</a>
-</div>
+
 
 <div class="row">
   <div class="column">
 
 <div class="slidecontainer">
 
+<div style="-bottom:50px;" class="header">
+  <i class="fa fa-car" style="font-size:48px;"></i>
+  <h1  style="margin-bottom:50px;" >Obstsalat macht Geschichte</h1>
+</div>
+
 
 
 <script type="text/javascript">
   
+<<<<<<< HEAD
 var max_route_length=50;
 var stop_time=10;
 
@@ -176,22 +293,43 @@ function updateTimePerSlot(val) {
   stop_time= val;
   find_route();
 }
+=======
+  var slider_var=50;
 
-
+  function updateTextInput(val) {
+    document.getElementById('textInput').value=val; 
+    slider_var= val;
+    find_route();
+  }
 </script>
 
-<!--   <p align="right">Alter:<input type="text" id="textInput" value=""></p>
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-  <p>Zeit:<input type="text" id="textInput" value=""></p>
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-  <p>Umweltbelastung:<input type="text" id="textInput" value=""></p>
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
+>>>>>>> styling
 
 
 
 
+  <label class="containercheckbox">Sehenswürdigkeiten
+      <input type="checkbox" checked="checked" value="sehenswuerdigkeiten" onclick="find_route();"/>
+      <span class="checkmark"></span>
+  </label></br>
+
+    <label class="containercheckbox">Zukunftsstadt
+      <input type="checkbox"  value="Zukunftsstadt" onclick="find_route();"/>
+      <span class="checkmark"></span>
+  </label></br>
+
+    <label class="containercheckbox">Nette Toiletten
+      <input type="checkbox"  value="bereinigte_Toiletten" onclick="find_route();"/>
+      <span class="checkmark"></span>
+  </label></br>
+
+    <label class="containercheckbox">Stolpersteine
+      <input type="checkbox"  value="stolpersteine" onclick="find_route();"/>
+      <span class="checkmark"></span>
+  </label></br>
+
+
+<<<<<<< HEAD
   <label for="myRange" id="lengthlbl">Max. Länge: 50</label></br>
   <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="200" onclick="updateTextInput(this.value);" value=50>
   <label for="time_per_stop" id="stoplbl">Zeit pro Station: 10</label></br>
@@ -211,6 +349,26 @@ function updateTimePerSlot(val) {
 <button onclick="find_route()">Route Finden!</button>
 <p>Routenlänge: <span id="routelen"></span></p>
 <p>Route:<br /> <span id="routeinfo"></span></p>
+=======
+
+
+<label style="margin-top:50px;" class="containercheckbox2">Zeit
+  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onchange="updateTextInput(this.value);">
+  <input type="text" id="textInput" value="50">
+  </label>
+
+
+
+
+<button class="button" onclick="find_route()">Click me</button>
+
+
+
+</div>
+
+<!-- <button onclick="deleteFunction()">Click me</button> -->
+
+>>>>>>> styling
 
 </div>
 <div id="mapid" style="width: 80%; height: 1000px;">
