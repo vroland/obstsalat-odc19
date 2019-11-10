@@ -33,7 +33,7 @@ def file_to_graph(path):
 
     def dist_mtrx(nodes):
         nodes = [node.location for node in nodes]
-        route = client.distance_matrix(locations=nodes)  # remove list splice for big matrices
+        route = client.distance_matrix(locations=nodes, profile="foot-walking")  # remove list splice for big matrices
         dm = [list(map(lambda x: max(1, int(x/60)), dur)) for dur in route["durations"]]
         return dm
 
