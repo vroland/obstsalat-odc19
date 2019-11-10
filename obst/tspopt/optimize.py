@@ -212,7 +212,7 @@ def find_route(graph, start, timeout, time_per_stop):
     #routing.AddVariableMinimizedByFinalizer(time_dimension.CumulVar(routing.End(0)))
 
     # Allow to drop nodes.
-    penalty = 100
+    penalty = 10000
     for node in range(len(data['graph'].nodes)):
         if node != data['depot']:
             routing.AddDisjunction([manager.NodeToIndex(node)], penalty)
