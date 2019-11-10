@@ -185,7 +185,7 @@ function updateTextInput(val) {
 
 
   <p>Zeit:<input type="text" id="textInput" value="50"></p>
-  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onchange="updateTextInput(this.value);">
+  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onclick="updateTextInput(this.value);">
   <input type="radio" id="theme" name="theme" value="sehenswuerdigkeiten" checked onclick="find_route();"/>
   <label for="genderm">Sehenswürdigkeiten</label></br>
   <input type="radio" id="theme" name="theme" value="Zukunftsstadt" onclick="find_route();"/>
@@ -244,6 +244,14 @@ function displayData(routeinfo) {
   markers.addTo(mymap);
 
   console.log(routeinfo.route.length);
+  
+  var route_start = routeinfo.trips["start"];
+  for (var j=0; j<route_start.waypoints.length; j++) {
+    var wp = route_start.waypoints[j];
+    points.push(new L.LatLng(wp[1], wp[0]));
+  }
+
+
   for (var i = 0; i < routeinfo.route.length; i++) {
   
     var route_node = routeinfo.nodes[routeinfo.route[i]];
@@ -279,7 +287,6 @@ function displayData(routeinfo) {
   x_average = x_average/routeinfo.route.length;
   y_average = y_average/routeinfo.route.length;
 
-  console.log(points);
   var firstpolyline = new L.Polyline(points, {
       color: 'red',
       weight: 3,
@@ -307,6 +314,7 @@ function displayData(routeinfo) {
   function onMapClick(e) {
     start_position = [e.latlng.lng, e.latlng.lat];
     find_route();
+    console.log("map click!");
     /*
                         popup
       .setLatLng(e.latlng)
@@ -327,27 +335,26 @@ function deleteFunction(){
 }
 
 
-
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var data = JSON.parse(this.responseText);
+    if (data) {
+      displayData(data);
+    } else {
+      console.log("no route found!");
+    }
+  }
+};
 
 function find_route() {
 
   var dataset = document.querySelector('input[name="theme"]:checked').value;
 
   console.log("using dataset", dataset)
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(this.responseText);
-      displayData(data);
-    }
-  };
-
-
 
   xmlhttp.open("GET", "http://localhost:8000/" + dataset + "/" + start_position[0] + ";" + start_position[1] + "/"+slider_var, true);
   xmlhttp.send();
-
-    // var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13)
 }
  
 find_route();
