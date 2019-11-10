@@ -68,6 +68,7 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 /* Style the header */
@@ -76,7 +77,7 @@ body {
   padding: 1px;
   /*text-align: center;*/
   text-align: center;
-  padding-bottom: 20px: 
+  padding-bottom: 20px;
 }
 
 /* Style the top navigation bar */
@@ -112,7 +113,15 @@ body {
 
 .map {
   float: right;
+  width: auto;
+  padding: 15px;
+  border-style: solid;
+}
+
+#mapid {
+  float: right;
   width: 80%;
+  height: 1200px;
   padding: 15px;
   border-style: solid;
 }
@@ -148,10 +157,10 @@ body {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   cursor: pointer;
-  font-size: 22px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -161,9 +170,9 @@ body {
 .containercheckbox2 {
   display: block;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -224,10 +233,21 @@ body {
   transform: rotate(45deg);
 }
 
+.routecontainer {
+  font-family: sans-serif;
+  font-size: 18px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.routecaption {
+  font-family: sans-serif;
+  font-size: 20px; 
+}
 
 input[type=text] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 10px;
   margin: 8px 0;
   box-sizing: border-box;
 }
@@ -270,8 +290,9 @@ p {
 <div class="slidecontainer">
 
 <div style="-bottom:50px;" class="header">
-  <i class="fa fa-car" style="font-size:48px;"></i>
-  <h1  style="margin-bottom:50px;" >Obstsalat macht Geschichte</h1>
+  <img src="img/hiking-solid.svg" width=60 height=60 />
+  <h2  style="margin-bottom:30px;" >Obstsalat macht Geschichte</h2>
+  <p style="font-family: sans-serif; font-size: 18px;">Entdecke deine Stadt auf neuen Wegen!</p>
 </div>
 
 
@@ -296,40 +317,41 @@ function updateTimePerSlot(val) {
 
 
 
-  <label class="containercheckbox">Sehenswürdigkeiten
+  <label class="containercheckbox"><i class="fas fa-palette"></i> Sehenswürdigkeiten
       <input name="theme" type="radio" checked value="sehenswuerdigkeiten" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
-    <label class="containercheckbox">Zukunftsstadt
+    <label class="containercheckbox"><i class="fas fa-leaf"></i> Zukunftsstadt
       <input name="theme" type="radio"  value="Zukunftsstadt" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
-    <label class="containercheckbox">Nette Toiletten
-      <input name="theme" type="radio"  value="bereinigte_Toiletten" onclick="find_route();"/>
-      <span class="checkmark"></span>
-  </label></br>
-
-    <label class="containercheckbox">Stolpersteine
+  <label class="containercheckbox"><i class="fas fa-monument"></i> Stolpersteine
       <input name="theme" type="radio"  value="stolpersteine" onclick="find_route();"/>
       <span class="checkmark"></span>
   </label></br>
 
 
-  <label style="margin-top:50px;" class="containercheckbox2" for="myRange" id="lengthlbl">Max. Länge: 50</label></br>
+  <label class="containercheckbox"><i class="fas fa-toilet-paper"></i> Nette Toiletten
+    <input name="theme" type="radio"  value="bereinigte_Toiletten" onclick="find_route();"/>
+    <span class="checkmark"></span>
+</label></br>
+
+
+  <label style="margin-top:10px;" class="containercheckbox2" for="myRange" id="lengthlbl">Max. Länge: 50min.</label></br>
   <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="200" onclick="updateTextInput(this.value);" value=50>
-  <label style="margin-top:50px;" class="containercheckbox2" for="time_per_stop" id="stoplbl">Zeit pro Station: 10</label></br>
+  <label style="margin-top:10px;" class="containercheckbox2" for="time_per_stop" id="stoplbl">Zeit pro Station: 10min.</label></br>
   <input type="range" class="slider" id="time_per_stop" name="rangeInput" min="0" max="30" onclick="updateTimePerSlot(this.value);" value=10>
 
 </div>
 
-<button onclick="find_route()">Route Finden!</button>
-<p>Routenlänge: <span id="routelen"></span></p>
-<p>Route:<br /> <span id="routeinfo"></span></p>
+<button class="button" onclick="find_route()">Route Finden!</button>
+<p class=routecaption><i class="fas fa-route"></i> <span id="routelen"></span></p>
+<p class="routecontainer">Route: <span id="routeinfo"></span></p>
 
 </div>
-<div id="mapid" style="width: 80%; height: 1000px;">
+<div id="mapid">
 </div>
 
 <script type="text/javascript">
@@ -366,13 +388,22 @@ function displayData(routeinfo) {
   markers = L.layerGroup();
   markers.addTo(mymap);
 
-  
+  var marker_symbols = {
+    sehenswuerdigkeiten: 'palette',
+    bereinigte_Toiletten: 'toilet-paper',
+    stolpersteine: 'monument',
+    Zukunftsstadt: 'leaf'
+  };
+
   var route_start = routeinfo.trips["start"];
   for (var j=0; j<route_start.waypoints.length; j++) {
     var wp = route_start.waypoints[j];
     points.push(new L.LatLng(wp[1], wp[0]));
   }
 
+  var markerList = [];
+
+  var dataset = document.querySelector('input[name="theme"]:checked').value;
   console.log(route_start.time );
 
   document.getElementById('routelen').innerHTML = (routeinfo.round_time + route_start.time) + "min. + " + ((routeinfo.route.length - 1)* stop_time) + "min. an Stationen";
@@ -398,18 +429,19 @@ function displayData(routeinfo) {
 
     // Creates a red marker with the coffee icon
     var redMarker = L.ExtraMarkers.icon({
-      icon: 'fa-leaf',
+      icon: 'fa-' + marker_symbols[dataset],
       markerColor: 'red',
       shape: 'square',
       prefix: 'fa',
       //innerHTML: "<span class='labeltext'>" + i.toString() + ": "+ caption + "</span>",
     });
 
-    list += caption + "<br />"
-    L.marker(coords, {icon: redMarker})
+    list += "<i class='fas fa-map-marker'></i> " + caption + "<br />"
+    var marker = L.marker(coords, {icon: redMarker})
       .addTo(markers)
       .bindPopup("<br/>"+caption + "<br/><br/>" + info)
       .openPopup();
+    markerList.push(marker);
 
     for (var j=0; j<route_trip.waypoints.length; j++) {
       var wp = route_trip.waypoints[j];
@@ -437,7 +469,7 @@ function displayData(routeinfo) {
  
   // Creates a red marker with the coffee icon
   var startMarker = L.ExtraMarkers.icon({
-    icon: 'fa-coffee',
+    icon: 'fa-play',
     markerColor: 'blue',
     shape: 'square',
     prefix: 'fa',
@@ -445,11 +477,12 @@ function displayData(routeinfo) {
     //innerHTML: "<span class='labeltext'>" + "start" + "</span>",
   });
 
-  L.marker([start_position[1], start_position[0]], {icon: startMarker})
+  var sm = L.marker([start_position[1], start_position[0]], {icon: startMarker})
     .addTo(markers)
     .bindPopup("<br/>Start!")
     .openPopup(); 
   var popup = L.popup();
+  sm = markerList.push(sm);
 
   function onMapClick(e) {
     start_position = [e.latlng.lng, e.latlng.lat];
@@ -463,6 +496,8 @@ function displayData(routeinfo) {
                         */
   }
 
+  var group = new L.featureGroup(markerList);
+  mymap.fitBounds(group.getBounds());
   mymap.on('click', onMapClick);
 }
 
