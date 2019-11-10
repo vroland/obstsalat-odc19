@@ -7,16 +7,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="css/leaflet.extra-markers.min.css">
 <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
-<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <!-- <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" /> -->
 
 <!--   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/> -->
@@ -132,6 +129,19 @@ body {
 </head>
 <body>
 
+<script type="text/javascript">
+/*!
+ * Leaflet.extra-markers
+ * Custom Markers for Leaflet JS based on Awesome Markers
+ * Leaflet ExtraMarkers
+ * https://github.com/coryasilva/Leaflet.ExtraMarkers/
+ * @author coryasilva <https://github.com/coryasilva>
+ * @version 1.0.5
+ */
+!function(a,b){"use strict";L.ExtraMarkers={},L.ExtraMarkers.version="1.0.1",L.ExtraMarkers.Icon=L.Icon.extend({options:{iconSize:[35,45],iconAnchor:[17,42],popupAnchor:[1,-32],shadowAnchor:[10,12],shadowSize:[36,16],className:"extra-marker",prefix:"",extraClasses:"",shape:"circle",icon:"",innerHTML:"",markerColor:"red",iconColor:"#fff",number:""},initialize:function(a){a=L.Util.setOptions(this,a)},createIcon:function(){var a=b.createElement("div"),c=this.options;return c.icon&&(a.innerHTML=this._createInner()),c.innerHTML&&(a.innerHTML=c.innerHTML),c.bgPos&&(a.style.backgroundPosition=-c.bgPos.x+"px "+-c.bgPos.y+"px"),this._setIconStyles(a,c.shape+"-"+c.markerColor),a},_createInner:function(){var a="",b="",c=this.options;return c.iconColor&&(a="style='color: "+c.iconColor+"' "),c.number&&(b="number='"+c.number+"' "),"<i "+b+a+"class='"+c.extraClasses+" "+c.prefix+" "+c.icon+"'></i>"},_setIconStyles:function(a,b){var c,d,e=this.options,f=L.point(e["shadow"===b?"shadowSize":"iconSize"]);"shadow"===b?(c=L.point(e.shadowAnchor||e.iconAnchor),d="shadow"):(c=L.point(e.iconAnchor),d="icon"),!c&&f&&(c=f.divideBy(2,!0)),a.className="leaflet-marker-"+d+" extra-marker-"+b+" "+e.className,c&&(a.style.marginLeft=-c.x+"px",a.style.marginTop=-c.y+"px"),f&&(a.style.width=f.x+"px",a.style.height=f.y+"px")},createShadow:function(){var a=b.createElement("div");return this._setIconStyles(a,"shadow"),a}}),L.ExtraMarkers.icon=function(a){return new L.ExtraMarkers.Icon(a)}}(window,document);
+</script>
+
+
 <div class="header">
   <h1>Obstsalat macht Geschichte</h1>
   <p>Stadtrundläufe mal anders.</p>
@@ -174,7 +184,7 @@ function updateTextInput(val) {
 
 
   <p>Zeit:<input type="text" id="textInput" value="50"></p>
-  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+  <input type="range" class="slider" id="myRange" name="rangeInput" min="0" max="500" onchange="updateTextInput(this.value);">
 
 
 
@@ -189,87 +199,85 @@ function updateTextInput(val) {
 
 
 </div>
-<div id="mapid" style="width: 80%; height: 500px;">
+<div id="mapid" style="width: 80%; height: 1000px;">
 </div>
-
-
-
-
-
-
-
-
 
 <script type="text/javascript">
 
 
 
 
-  var x_average = 0;
-  var y_average = 0;
-    var i;
-  var points = [];
-  var markers = L.layerGroup();
+var x_average = 0;
+var y_average = 0;
+var markers = null;
+
+// build map
+var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+  maxZoom: 18,
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  id: 'mapbox.streets'
+}).addTo(mymap);
   
 function displayData(routeinfo) {
-    // console.log(routeinfo.route[i]);
-
-  for (i = 0; i < routeinfo.route.length; i++) {
-
-    L.marker([routeinfo.nodes[routeinfo.route[i]][1][1], routeinfo.nodes[routeinfo.route[i]][1][0]]).addTo(mymap)
-      .bindPopup("<br/>"+JSON.stringify(routeinfo.nodes[routeinfo.route[i]][2].einrichtung)).openPopup();
-
-    // var marker=L.marker([routeinfo.nodes[routeinfo.route[i]][1][1], routeinfo.nodes[routeinfo.route[i]][1][0]]);
-
-    // markers.bindPopup("<br/>"+JSON.stringify(routeinfo.nodes[routeinfo.route[i]][2].einrichtung)).openPopup();
-
-    // markers.addLayer(marker);
-
-    // this.mymap.addLayer(markers);
-
-    points[i]=new L.LatLng(routeinfo.nodes[routeinfo.route[i]][1][1], routeinfo.nodes[routeinfo.route[i]][1][0]);
 
 
-    x_average = x_average + routeinfo.nodes[routeinfo.route[i]][1][1];
-    y_average = y_average + routeinfo.nodes[routeinfo.route[i]][1][0];
-
+  var points = [];
+  if (markers != null) {
+    markers.clearLayers();
   }
 
-L.markers.addTo(mymap);
+  // create markers layer, add to map
+  markers = L.layerGroup();
+  markers.addTo(mymap);
 
+  console.log(routeinfo.route.length);
+  for (var i = 0; i < routeinfo.route.length; i++) {
+  
+    var route_node = routeinfo.nodes[routeinfo.route[i]];
+    var route_trip = routeinfo.trips[routeinfo.route[i]];
+    var caption = JSON.stringify(route_node[2].einrichtung);
+    var coords = [route_node[1][1], route_node[1][0]];
+
+    // Creates a red marker with the coffee icon
+    var redMarker = L.ExtraMarkers.icon({
+      //icon: 'fa-coffee',
+      markerColor: 'red',
+      shape: 'square',
+      //prefix: 'fa',
+      innerHTML: "<span class='labeltext'>" + i.toString() + ": "+ caption + "</span>",
+    });
+
+    L.marker(coords, {icon: redMarker})
+      .addTo(markers)
+      .bindPopup("<br/>"+caption)
+      .openPopup();
+
+    for (var j=0; j<route_trip.waypoints.length; j++) {
+      var wp = route_trip.waypoints[j];
+      points.push(new L.LatLng(wp[1], wp[0]));
+    }
+
+
+    x_average = x_average + coords[0];
+    y_average = y_average + coords[1];
+
+  }
 
   x_average = x_average/routeinfo.route.length;
   y_average = y_average/routeinfo.route.length;
 
-
-if(firstpolyline!=undefined){
-  mymap.removeLayer(firstpolyline);
-}
-
-
-
+  console.log(points);
   var firstpolyline = new L.Polyline(points, {
       color: 'red',
       weight: 3,
       opacity: 0.5,
       smoothFactor: 1
   });
-  firstpolyline.addTo(mymap);
-
-
-
-  // L.circle([51.0504, 13.7], 500, {
-  //   color: 'red',
-  //   fillColor: '#f03',
-  //   fillOpacity: 0.5
-  // }).addTo(mymap).bindPopup("I am a circle.");
-
-  // L.polygon([
-  //   [51.509, -0.08],
-  //   [51.503, -0.06],
-  //   [51.51, -0.047]
-  // ]).addTo(mymap).bindPopup("I am a polygon.");
-
+  firstpolyline.addTo(markers);
 
   var popup = L.popup();
 
@@ -282,13 +290,10 @@ if(firstpolyline!=undefined){
 
   mymap.on('click', onMapClick);
 
-
-
     // if (markers != undefined) {
     //           markers.clearLayers();
     //     };
 
-    markers.clearLayers();
 
 }
 
@@ -323,17 +328,6 @@ function myFunction() {
 
 }
   
-  var mymap = L.map('mapid').setView([ 51.0504088, 13.7372621], 13);
-
-
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-    maxZoom: 18,
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    id: 'mapbox.streets'
-  }).addTo(mymap);
-
 </script>
 
 
