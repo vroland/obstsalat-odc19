@@ -1,0 +1,29 @@
+diff --git a/docker/conf/app.config.sample b/docker/conf/app.config.sample
+index dd83904b..423ca901 100644
+--- a/docker/conf/app.config.sample
++++ b/docker/conf/app.config.sample
+@@ -9,8 +9,9 @@
+       "services":{
+          "matrix":{
+             "enabled":true,
+-            "maximum_locations":200,
+-            "maximum_visited_nodes":100000,
++            "maximum_locations":20000,
++            "maximum_visited_nodes":1000000,
++            "maximum_routes": 200000,
+             "allow_resolve_locations":true,
+             "attribution":"openrouteservice.org, OpenStreetMap contributors"
+          },
+diff --git a/docker/docker-compose.yml b/docker/docker-compose.yml
+index a3d9d1df..b4b6909c 100644
+--- a/docker/docker-compose.yml
++++ b/docker/docker-compose.yml
+@@ -8,7 +8,7 @@ services:
+             context: ../
+             args:
+                 APP_CONFIG: ./docker/conf/app.config.sample
+-                OSM_FILE: ./docker/data/heidelberg.osm.gz
++                OSM_FILE: ./docker/data/sachsen-latest.osm.pbf
+         volumes:
+             - ./graphs:/ors-core/data/graphs
+             - ./elevation_cache:/ors-core/data/elevation_cache

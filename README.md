@@ -20,3 +20,5 @@ pip install -r requirements.txt
 * Make sure you have openrouteservice running under localhost. 
 * Start the backend service: `cd obst/tsopt/ && python3 optimize.py`. It should load the pre-computed dataset graphs.
 * Open the front-end file in `obst/ui/index.html`
+
+* To disable openrouteservice rate limiting, apply `./openrouteservice_config.patch` to the sample config of the openrouteservice docker container.
