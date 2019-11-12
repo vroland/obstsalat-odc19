@@ -121,7 +121,7 @@ body {
 #mapid {
   float: right;
   width: 80%;
-  height: 1200px;
+  height: 1080px;
   padding: 15px;
   border-style: solid;
 }
@@ -492,21 +492,10 @@ function displayData(routeinfo) {
   var popup = L.popup();
   sm = markerList.push(sm);
 
-  function onMapClick(e) {
-    start_position = [e.latlng.lng, e.latlng.lat];
-    find_route();
-    console.log("map click!");
-    /*
-                        popup
-      .setLatLng(e.latlng)
-      .setContent("You clicked the map at " + e.latlng.toString())
-      .openOn(mymap);
-                        */
-  }
+  
 
   var group = new L.featureGroup(markerList);
   mymap.fitBounds(group.getBounds());
-  mymap.on('click', onMapClick);
 }
 
 
@@ -539,7 +528,13 @@ function find_route() {
   xmlhttp.open("GET", "http://localhost:8000/" + dataset + "/" + start_position[0] + ";" + start_position[1] + "/"+max_route_length + "/" + stop_time, true);
   xmlhttp.send();
 }
- 
+
+function onMapClick(e) {
+  start_position = [e.latlng.lng, e.latlng.lat];
+  find_route();
+}
+
+mymap.on('click', onMapClick);
 find_route();
 </script>
 

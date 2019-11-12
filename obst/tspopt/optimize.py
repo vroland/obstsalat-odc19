@@ -138,7 +138,7 @@ def solution_to_json(data, manager, routing, assignment):
     answer["round_time"] = route_time
     print("round_time:", route_time)
     print(route_output)
-    return json.dumps(answer, indent=4)
+    return json.dumps(answer)
 
 
 def find_route(graph, start, timeout, time_per_stop):
@@ -249,17 +249,20 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write("invalid graph".encode("utf-8"))
             return
 
-        self.send_response(200)
-        self.send_header('Content-type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.end_headers()
         print ("path:", self.path)
         timeout = int(timeout)
         time_per_stop = int(time_per_stop)
         lonlat = list(map(float, lonlat.split(";")))
         graph = graphs[graph_name]
         print ("using timeout:", timeout)
-        self.wfile.write(find_route(graph, lonlat, timeout, time_per_stop).encode("utf-8"))
+        answer = find_route(graph, lonlat, timeout, time_per_stop).encode("utf-8")
+
+        self.send_response(200)
+        self.send_header('Content-type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header("Content-Length", str(len(answer)))
+        self.end_headers()
+        self.wfile.write(answer)
 
 if __name__ == '__main__':
 
