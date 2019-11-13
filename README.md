@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Running
 
-* Make sure you have openrouteservice running under localhost. 
+* Make sure you have openrouteservice running under localhost (follow https://github.com/GIScience/openrouteservice/blob/master/docker/README.md and load the dataset for saxony)
 * Start the backend service: `cd obst/tsopt/ && python3 optimize.py`. It should load the pre-computed dataset graphs.
 * Open the front-end file in `obst/ui/index.html`
 
