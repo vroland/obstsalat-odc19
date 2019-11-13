@@ -21,7 +21,7 @@ pip install -r requirements.txt
 * clone the openrouteservice repository
 * To disable openrouteservice rate limiting, apply `./openrouteservice_config.patch` to the sample config of the openrouteservice docker container.
 * Download an appropriate open streetmap dataset (e.g. saxony)
-* delete everything in `docker/graphs`! This will force openrouteservice to rebuild the map data. Otherwise, you might get unexpected `Error Code 2099` errors, because the requested coordinates are off map.
+* delete everything in `docker/graphs`! This will force openrouteservice to rebuild the map data. Otherwise, you might get unexpected `Error Code 2099` errors, because the requested coordinates are off map. Running docker compose without the `-d` flag (in foreground mode) helps catch any out of memory exceptions.
 * make sure the container has enough RAM available. Increase RAM limit as described in https://github.com/GIScience/openrouteservice/blob/master/docker/README.md. Using a VM with 3G of ram did not work for me, while 6G worked just fine.
 
 ### Running locally
