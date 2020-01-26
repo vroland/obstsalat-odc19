@@ -73,4 +73,14 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{}
+    \begin{tikzpicture}
+        \node[draw] (data) at (-3, 0) {Datenauswahl};
+        \node[draw] (routing) at (0, 0) {Routing};
+        \node[draw] (vis) at (3, 0) {Visualisierung};
+
+        \draw[->] (data) -- (routing);
+        \draw[->] (routing) -- (vis);
+    \end{tikzpicture}
+\end{frame}
 \end{document}
