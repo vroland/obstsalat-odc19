@@ -23,6 +23,8 @@ from http.server import *
 import json
 import math
 import os
+import time
+import numpy as np
 
 sys.path.append("../datatograph")
 from d2g import load_graph
@@ -61,11 +63,12 @@ def create_data_model(graph, start):
 
 
     data['graph'] = graph
-    data['base_costs'] = graph.distance_matrix
-    data['time_matrix'] = graph.distance_matrix
+    data['base_costs'] = np.array(graph.distance_matrix)
+    data['time_matrix'] = np.array(graph.distance_matrix)
     #data['time_windows'] = [(i, 2000) for i, _ in enumerate(graph.nodes)]
     data['num_vehicles'] = 1
     data['depot'] = start_node
+    print ("start node:", start_node)
     return data
     # [END data_model]
 
@@ -80,26 +83,15 @@ def solution_to_json(data, manager, routing, assignment):
     if not assignment:
         return json.dumps(None)
 
-    dropped_nodes = []
-    for node in range(routing.Size()):
-        if routing.IsStart(node) or routing.IsEnd(node):
-            continue
-        if assignment.Value(routing.NextVar(node)) == node:
-            dropped_nodes.append(manager.IndexToNode(node))
-
-    print('Dropped nodes:', dropped_nodes, "(", len(dropped_nodes), ")")
-    # Display routes
-
-
     previous_index = routing.Start(0) # vehicle 0
     index = manager.IndexToNode(assignment.Value(routing.NextVar(previous_index)))
     route_output = [previous_index]
 
     while not routing.IsEnd(index):
-        route_output.append(manager.IndexToNode(index))
+        route_output.append(int(manager.IndexToNode(index)))
         previous_index = index
         index = assignment.Value(routing.NextVar(index))
-    route_output.append(manager.IndexToNode(index))
+    route_output.append(int(manager.IndexToNode(index)))
 
     print (route_output, "nodes:", len(data['graph'].nodes))
     print('Objective: {} miles'.format(assignment.ObjectiveValue()))
@@ -107,7 +99,7 @@ def solution_to_json(data, manager, routing, assignment):
 
     route_time = 0
     answer = {}
-    answer["nodes"] = { i : data['graph'].nodes[i] for i in route_output }
+    answer["nodes"] = { int(i) : data['graph'].nodes[i] for i in route_output }
     answer["route"] = route_output
     answer["trips"] = {}
     round_trip_list = route_output + [data['depot']]
@@ -125,7 +117,7 @@ def solution_to_json(data, manager, routing, assignment):
         m = round_trip_list[i + 1]
         answer["trips"][n] = {}
         trip = answer["trips"][n]
-        trip["time"] = data['time_matrix'][n][m]
+        trip["time"] = int(data['time_matrix'][n][m])
         route_time += trip["time"]
         trip["waypoints"] = []
         geometry = section_geometry(
@@ -144,8 +136,12 @@ def solution_to_json(data, manager, routing, assignment):
 def find_route(graph, start, timeout, time_per_stop):
     """Solve the CVRP problem."""
 
+    start_time = time.process_time()
+
     # Instantiate the data problem.
     data = create_data_model(graph, start)
+
+    data_time = time.process_time()
 
     initial_time = data['initial_time']
     print ("initial time", initial_time)
@@ -159,7 +155,10 @@ def find_route(graph, start, timeout, time_per_stop):
     routing = pywrapcp.RoutingModel(manager)
 
 
+    func_calls = 0
     def base_cost_callback(from_index, to_index):
+        nonlocal func_calls
+        func_calls += 1
         from_node = manager.IndexToNode(from_index)
         to_node = manager.IndexToNode(to_index)
         return data['base_costs'][from_node][to_node]
@@ -171,6 +170,8 @@ def find_route(graph, start, timeout, time_per_stop):
 
 
     def time_callback(from_index, to_index):
+        nonlocal func_calls
+        func_calls += 1
         from_node = manager.IndexToNode(from_index)
         to_node = manager.IndexToNode(to_index)
         return data['time_matrix'][from_node][to_node]+ time_per_stop # if to_node != data['depot'] else 0)
@@ -229,8 +230,19 @@ def find_route(graph, start, timeout, time_per_stop):
     # Solve the problem.
     assignment = routing.SolveWithParameters(search_parameters)
 
+    end_time = time.process_time()
+
+    print ("data time:", int(1000*(data_time - start_time)), "total time:", int(1000*(end_time - start_time)))
+    print ("func calls:", func_calls)
     #print ("cumul len:", assignment.Max(time_dimension.CumulVar(routing.End(0))))
-    return solution_to_json(data, manager, routing, assignment)
+    result = solution_to_json(data, manager, routing, assignment)
+    print ("json time:", int(1000*(time.process_time() - end_time)))
+
+    bla = time.process_time()
+    for i in range(func_calls):
+        time_callback(10, 20)
+    print (time.process_time() - bla)
+    return result
 
 
 
@@ -249,6 +261,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write("invalid graph".encode("utf-8"))
             return
 
+        start_time = time.process_time()
         print ("path:", self.path)
         timeout = int(timeout)
         time_per_stop = int(time_per_stop)
@@ -263,6 +276,8 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(answer)))
         self.end_headers()
         self.wfile.write(answer)
+        end_time = time.process_time()
+        print("total request time:", int(1000*(end_time - start_time)))
 
 if __name__ == '__main__':
 
