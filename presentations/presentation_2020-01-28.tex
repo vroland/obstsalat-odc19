@@ -44,14 +44,14 @@
 }
 
 \title{ôbstsalat}
-\subtitle{Explorative Stadterkundung mit offenen Daten}
+\subtitle{Explorative Stadttouren mit offenen Daten}
 \author{Roland, Jurkschat, Do Duc, de Boer}
-
+\titlegraphic{\hfill\includegraphics[height=1.25cm]{colored-logo.pdf}}
 \begin{document}
 
 \frame{\titlepage}
 
-\begin{frame}{Offene Daten für personalisierte Stadexploration}
+\begin{frame}{Offene Daten für offene Bürger}
     \begin{minipage}{.5\textwidth}
         \only<1>{\includegraphics[width=\textwidth]{frauenkircheAusblick.png}}
         \only<2>{\includegraphics[width=\textwidth]{großerGarten.png}}
@@ -69,20 +69,38 @@
 \end{frame}
 
 \begin{frame}{Rundrouten}
-	ôbstsalat plant Rundrouten die:
+	ôbstsalat plant Rundrouten, die:
 	\begin{itemize}
 		\item von einem selbstgewähltem Standort aus starten
 		\item Stationen präferierter Themenbereiche verbinden
 		\item das individuelle Zeitbudget berücksichtigen
 	\end{itemize}
+	\vspace{0.5cm}
+	\begin{tikzpicture}
+		\node (logo) at (-3, 0) {\includegraphics[width=.2\textwidth]{colored-logo.pdf}};
+		\draw[->, LimeGreen, line width=1.5mm] (-5, -1.5) -- (5, -1.5);
+	\end{tikzpicture}
 \end{frame}
 
-\begin{frame}{Wen wollen wir erreichen?}
-    \begin{itemize}
-        \item Einheimische, die Dresden neu entdecken wollen.
-        \item Touristen, die für sie interessante Ziele besuchen wollen.
-        \item Die Stadt als Anbieter / Planer für kulturelle Stadttouren.
-    \end{itemize}
+\begin{frame}{Wer ist unsere Zielgruppe?}
+\Wider{
+	\centering
+	\begin{tikzpicture}
+		\node [draw, ellipse] (einheim) at (0, 2) {\begin{tabular}{c}
+			\textbf{Einheimische}\\
+			\small{Dresden neu entdecken}\end{tabular}
+		};	
+		\node [draw, ellipse] (touris) at (-3, -0.5) {\begin{tabular}{c}
+			\textbf{Touristen}\\
+			\small{Dresden anders kennen lernen}
+		\end{tabular}};
+		\node [draw, ellipse] (stadt) at (3, -2) {\begin{tabular}{c}
+			\textbf{Stadt Dresden}\\
+			\small{Stadttouren planen}
+		\end{tabular}};
+		\draw (einheim) -- (touris) -- (stadt) -- (einheim);
+	\end{tikzpicture}
+}
 \end{frame}
 
 \begin{frame}{}
@@ -90,12 +108,12 @@
     \centering
     \begin{tikzpicture}
         \node (data) at (-4.5, 0) {\includegraphics[width=.2\textwidth]{openData.png}};
-        \node (datal) at (-4.5, -1.5) {Datenauswahl};
+        \node (datal) at (-4.5, -2) {Datenauswahl};
         \node (preproc) at (0, .5) {\includegraphics[width=.2\textwidth]{openrouteservice.png}};
-        \node (routing) at (0, -.5) {\includegraphics[width=.2\textwidth]{googleai.png} };
-        \node (routingl) at (0, -1.5) {Vorverarbeitung \& Routing};
+        \node (routing) at (0, -.5) {\includegraphics[width=.25\textwidth]{googleai.png} };
+        \node (routingl) at (0, -2) {Vorverarbeitung \& Routing};
         \node (vis) at (4.5, 0) {\includegraphics[width=.2\textwidth]{leaflet.png}};
-        \node (visl) at (4.5, -1.5) {Visualisierung};
+        \node (visl) at (4.5, -2) {Visualisierung};
 
         \draw[->] (data) -- (-1.5, 0);
         \draw[->] (1.5, 0) -- (vis);
