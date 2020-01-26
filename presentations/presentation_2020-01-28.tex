@@ -74,13 +74,20 @@
 \end{frame}
 
 \begin{frame}{}
+    \Wider{
+    \centering
     \begin{tikzpicture}
-        \node[draw] (data) at (-3, 0) {Datenauswahl};
-        \node[draw] (routing) at (0, 0) {Routing};
-        \node[draw] (vis) at (3, 0) {Visualisierung};
+        \node (data) at (-4.5, 0) {\includegraphics[width=.2\textwidth]{openData.png}};
+        \node (datal) at (-4.5, -1.5) {Datenauswahl};
+        \node (preproc) at (0, .5) {\includegraphics[width=.2\textwidth]{openrouteservice.png}};
+        \node (routing) at (0, -.5) {\includegraphics[width=.2\textwidth]{googleai.png} };
+        \node (routingl) at (0, -1.5) {Vorverarbeitung \& Routing};
+        \node (vis) at (4.5, 0) {\includegraphics[width=.2\textwidth]{leaflet.png}};
+        \node (visl) at (4.5, -1.5) {Visualisierung};
 
-        \draw[->] (data) -- (routing);
-        \draw[->] (routing) -- (vis);
+        \draw[->] (data) -- (-1.5, 0);
+        \draw[->] (1.5, 0) -- (vis);
     \end{tikzpicture}
+}
 \end{frame}
 \end{document}
