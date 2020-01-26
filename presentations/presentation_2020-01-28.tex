@@ -1,2 +1,50 @@
+\documentclass[13pt, usenames, dvipsnames]{beamer}
+\usepackage{pgfpages}
+
+\setbeameroption{show notes on second screen}
+\usetheme[progressbar=frametitle,block=fill]{metropolis}
+
+%\usepackage[
+%backend=biber,
+%style=ieee,
+%citestyle=authoryear,
+%mincitenames=1,
+%maxcitenames=1
+%]{biblatex}
+
+\usepackage{alltt}
+\usepackage{tikz, verbatimbox}
+\usetikzlibrary{arrows, arrows.meta, positioning, decorations.markings, shapes, decorations, overlay-beamer-styles}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{marvosym} 
+\usepackage{comment}
+\usepackage[ngerman]{babel}
+
+%\addbibresource{bib.bib}
+
+\tikzset{>=Latex}
+\tikzset{
+  %auto,
+  invisible/.style={opacity=0},
+  visible on/.style={alt={#1{}{invisible}}},
+  alt/.code args={<#1>#2#3}{%
+    \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+  },
+}
+
+\newcommand\Wider[2][2.0cm]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
 \begin{document}
+\begin{frame}{Bla}
+
+\end{frame}
 \end{document}
