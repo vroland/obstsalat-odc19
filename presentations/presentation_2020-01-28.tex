@@ -1,7 +1,7 @@
 \documentclass[13pt, usenames, dvipsnames]{beamer}
 \usepackage{pgfpages}
 
-\setbeameroption{show notes on second screen}
+%\setbeameroption{show notes on second screen}
 \usetheme[progressbar=frametitle,block=fill]{metropolis}
 
 %\usepackage[
@@ -44,9 +44,20 @@
 }
 
 \begin{document}
-\begin{frame}{}
-    \begin{center}
-        \textbf{\large Offene Daten für personalisierte Stadexploration}
-    \end{center}
+\begin{frame}{Offene Daten für personalisierte Stadexploration}
+    \begin{minipage}{.5\textwidth}
+        \only<1>{\includegraphics[width=\textwidth]{großerGarten.png}}
+        \only<2>{\includegraphics[width=\textwidth]{frauenkircheAusblick.png}}
+        \only<3>{\includegraphics[width=\textwidth]{albrechtsbergSchloss.png}}
+    \end{minipage}%
+    \begin{minipage}{.5\textwidth}
+        \begin{itemize}
+            \item Die eigene Stadt neu entdecken
+                \pause
+            \item Personalisierte Ziele für Touristen
+                \pause
+            \item Anbieten von Bildungstouren
+        \end{itemize}
+    \end{minipage}
 \end{frame}
 \end{document}
