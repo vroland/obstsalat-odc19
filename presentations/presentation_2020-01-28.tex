@@ -120,4 +120,32 @@
     \end{tikzpicture}
 }
 \end{frame}
+
+\section{Demo}
+
+\begin{frame}{Offene Daten... und Nun?}
+    \centering
+    Wir haben ein schönes Open Data Portal.
+    \begin{center}
+        \includegraphics[trim=0 200 0 0,clip,width=.8\textwidth]{openData.png}
+    \end{center}
+    \glqq Jemand\grqq~muss etwas mit den Daten tun!\\
+    \pause
+    {\footnotesize
+        \begin{tikzpicture}
+            \node[LimeGreen] (ansch) at (-3, 0) {Anschauen: Themenstadtplan!};
+            \node[orange] (verarb) at (3, 0) {Weiterverarbeiten: WFS - WTF?};
+            \draw[->] (0, 1) -- (ansch);
+            \draw[->] (0, 1) -- (verarb);
+        \end{tikzpicture}
+    }
+    \pause
+    $\hookrightarrow$ Daten Nutzungsorientiert zur Verfügung stellen\\
+    $\hookrightarrow$ CSV, GEOJSON, Metadaten Maschinenlesbar\\
+    \note{
+        Viele Daten schon als CSV, v.a. Statistik $\rightarrow$ sehr gut!\\
+        V.a. wichtig für nicht-Informatiker, aber auch nicht Geodaten-Versierte.
+    }
+\end{frame}
+
 \end{document}
